@@ -1,0 +1,181 @@
+//variable
+$nav_height:13%;
+$nav_width:88%;
+$footer_hright:5.7%;
+$middle_height:81.3%;
+$left_column:12%;
+$right_column:36%;
+$middle_column:52%;
+
+
+/*this is first page config*/
+body{
+    background-color: #304753;
+}
+
+.main{
+    position: relative;
+    top:20%;
+    width:30%;
+    height: 53%;
+    left:35%;
+    align-content: center;
+    #logo_img{
+        position: absolute;
+        top:0;
+        width: 100%;
+        height:70%;
+        background-image: url('../img/logo.png');
+        background-size: cover;
+        //-------------------------
+        border:2px solid;
+    }
+    #button_start{
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        height: 30%;
+
+
+        //-------------------------
+        border: 2px solid;
+    }
+    .btn-primary{
+        position: absolute;
+        width: 100%;
+    } 
+//-----------------------------
+    border:2px solid;
+}
+
+
+
+
+
+
+
+
+
+/*this is second page config*/
+
+.wrap{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    nav{
+        width: $nav_width;
+        height: $nav_height;
+        text-align: center;
+        float: right;
+        clear: both;
+    //-------------------------------
+    border:2px solid;
+    }
+    .sidebar_region{
+        position: absolute;
+        background-color:#FFECC9;
+        width:$left_column;
+        height:100%;
+        align-content: center;
+        line-height:400px;
+        float:left;
+        #logo{
+            position: absolute;
+            margin: 10%;
+            width: 80%;
+            height: 20%;
+            background-image: url('../img/logo.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .side_icon{
+            position: absolute;
+            display: block;
+            margin: 10%;
+            left:10%;
+            width:60%;
+            height:10%;
+            text-align: center;
+            padding-left: 10%;
+            padding-right: 10%;
+            line-height: 2px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+            //-----------------------------------
+            border: 2px solid gray;
+        }
+        //------------------------------------
+        border: 2px solid blue;
+          
+    //--------------------------------
+    border: 2px solid;
+    }
+    .order_region{
+        position: absolute;
+        width: $middle_column;
+        height: $middle_height;
+        top:$nav_height;
+        align-content: center;
+        margin-left: $left_column;
+        margin-right: $right_column;
+    //---------------------------------
+    border: 2px solid;
+    }
+    .shopping_region{
+        position: absolute;
+        background-color: aquamarine;
+        top:$nav_height;
+        right: 0;
+        width: $right_column;
+        height: $middle_height;
+        text-align: center;
+    //----------------------------------
+    border:2px solid;
+    }
+//---------------------------------------
+border:3px solid red;
+}
+
+#menber{
+    background-image: url('../img/burger_icon.jpg');
+    margin: 5%;
+    top:25%;
+}
+#menu{
+    background-image: url('../img/burger_icon.jpg');
+    margin: 5%;
+    top:35%;
+}
+#map{
+    background-image: url('../img/burger_icon.jpg');
+    margin: 5%;
+    top:45%;
+}
+
+
+.hamburger{
+    //position:absolute;
+    margin: 0%;
+    padding: 10%;
+    width: 40%;
+    height: 100px;
+    display: block;
+    background-color: bisque;
+
+    #img{
+        margin:left;
+        padding: 0%;
+        display: inline;
+        position: absolute;
+        box-align: left;
+        background-color: aqua;
+        block-size: 60% 100%;
+    }
+}
+
+
