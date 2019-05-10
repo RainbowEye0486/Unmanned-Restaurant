@@ -221,8 +221,13 @@ function myFunction1(){
 	   infowindow2.close();
 	   marker1.setMap(null);
 	   marker2.setMap(null);
-           document.getElementById('storeinfo1').innerHTML = '黑膠漢堡台南車站店</br>' ;
-	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>09xx-xxx-xxx' ;
+       document.getElementById('storeinfo1').innerHTML = '黑膠漢堡台南車站店</br>' ;
+	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>電話：09xx-xxx-xxx' ;
+	   document.getElementById('mapbox').style.width='86%';
+	   document.getElementById('mapbox').style.height='42%';
+       $('.step2').removeClass('animated fadeOutRight 0.3s');
+       $('.step2').addClass('animated fadeInRight 0.3s');
+       $('.step2').show();
     };
 function myFunction2(){	   
 	   $('#step2_btn').addClass('red');
@@ -294,8 +299,13 @@ function myFunction2(){
 	   infowindow2.close();
 	   marker1.setMap(null);
 	   marker2.setMap(null);
-           document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
-	   document.getElementById('storeinfo2').innerHTML = '地址：台南市東區崇善路151號</br>09xx-xxx-xxx' ;
+       document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
+	   document.getElementById('storeinfo2').innerHTML = '地址：台南市東區崇善路151號</br>電話：09xx-xxx-xxx' ;
+	   document.getElementById('mapbox').style.width='86%';
+	   document.getElementById('mapbox').style.height='42%';
+	   $('.step2').removeClass('animated fadeOutRight 0.3s');
+       $('.step2').addClass('animated fadeInRight 0.3s');
+       $('.step2').show();
     };
 
 
@@ -308,5 +318,22 @@ $('#chtext2').on('click', function () {
     document.getElementById('storeinfo2').innerHTML = '' ;
     initMap();
     $('#mapboximg').hide();
-    document.getElementById('mapboximgin').src = "";
+	document.getElementById('mapboximgin').src = "";
+	$('.step2').addClass('animated fadeOutRight 0.3s');
+	$('.step3').addClass('animated fadeOutRight 0.3s')
+	document.getElementById('mapbox').style.width='200%';
+	document.getElementById('mapbox').style.height='60%';
+	document.getElementById('storeinfo1').style.color='white';
+	document.getElementById('week').style.color='white';
+    document.getElementById('month').style.color='white';
+    document.getElementById('day').style.color='white';
+    document.getElementById('hour').style.color='white';
+	document.getElementById('minute').style.color='white';
+	document.getElementById('dot1').style.color='white';
+    document.getElementById('dot2').style.color='white';
+	$('#line').addClass('opacity')
+    $('#card').addClass('opacity')
+    $('#wallet').addClass('opacity')
+	$('#yoyo').addClass('opacity')
+	$('#confirm_red').hide()
 })

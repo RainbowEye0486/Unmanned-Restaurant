@@ -146,6 +146,8 @@ $('#step1_btn').on('click', function () {
     $('#step1_btn').addClass('red')
     $('#step2_btn').removeClass('red')
     $('#step3_btn').removeClass('red')
+    $('.step2').addClass('animated fadeOutRight 0.3s')
+    $('.step3').addClass('animated fadeOutRight 0.3s')
 })
 /*
 $('#chtext2').on('click', function () {
@@ -176,6 +178,7 @@ $('#step3_btn').on('click', function () {
 
 
 $('#self_defind').on('click', function () {
+    document.getElementById('getimetext').innerHTML = '選擇取餐時間' ;
     $('#default').addClass('opacity')
     $('#defa').addClass('opacity')
     $('#self_defind').removeClass('opacity')
@@ -224,6 +227,7 @@ $('#self_defind').on('click', function () {
 
 $('#default').on('click', function () {
     $('.time_block').animate({ height: "50%" })
+    document.getElementById('default').innerHTML ="系統預定"
 
     $('#default').removeClass('opacity')
     $('#defa').removeClass('opacity')
@@ -241,6 +245,23 @@ $('#default').on('click', function () {
     $('#step3_btn').removeClass('red')
     $('#self_defind').fadeIn()
     $('.step3').addClass('animated fadeOutRight 0.5s')
+
+    $('#confirm_red').hide()
+
+    document.getElementById('storeinfo1').style.color='white';
+    document.getElementById('week').style.color='white';
+    document.getElementById('month').style.color='white';
+    document.getElementById('day').style.color='white';
+    document.getElementById('hour').style.color='white';
+    document.getElementById('minute').style.color='white';
+    document.getElementById('dot1').style.color='white';
+    document.getElementById('dot2').style.color='white';
+
+    $('#line').addClass('opacity')
+    $('#card').addClass('opacity')
+    $('#wallet').addClass('opacity')
+    $('#yoyo').addClass('opacity')
+
 
     /*這裡是重抓時間的功能，之後可能用到上一頁面執行*/
     var day = new Date()
@@ -269,18 +290,22 @@ $('#next1').on('click', function () {
     $('.step3').removeClass('animated fadeOutRight 0.5s')
     $('.step3').addClass('animated fadeInRight 0.5s')
     $('.step3').show()
+    document.getElementById('getimetext').innerHTML = '取餐時間' ;
 })
 
 
 $('#next2').on('click', function () {
     $('#step2_btn').removeClass('red')
     $('#step3_btn').addClass('red')
+    $('#defa').removeClass('opacity')
     $('#next1').fadeOut()
     $('#self_defind').fadeOut()
+    document.getElementById('default').innerHTML = "自行設定"
     $('.time_block').animate({ height: "27%" })
     $('.step3').removeClass('animated fadeOutRight 0.5s')
     $('.step3').addClass('animated fadeInRight 0.5s')
     $('.step3').show()
+    document.getElementById('getimetext').innerHTML = '取餐時間' ;
 
     $('#cost').addClass('animated fadeOutLeft 0.5s')
     $('#cost').delay(400).hide()
@@ -306,6 +331,15 @@ $('#line').on('click', function () {
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
     $('#confirm_red').fadeIn(200)
+    
+    document.getElementById('storeinfo1').style.color='red';
+    document.getElementById('week').style.color='red';
+    document.getElementById('month').style.color='red';
+    document.getElementById('day').style.color='red';
+    document.getElementById('hour').style.color='red';
+    document.getElementById('minute').style.color='red';
+    document.getElementById('dot1').style.color='red';
+    document.getElementById('dot2').style.color='red';
 })
 
 $('#wallet').on('click', function () {
@@ -318,6 +352,15 @@ $('#wallet').on('click', function () {
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
     $('#confirm_red').fadeIn(200)
+    
+    document.getElementById('storeinfo1').style.color='red';
+    document.getElementById('week').style.color='red';
+    document.getElementById('month').style.color='red';
+    document.getElementById('day').style.color='red';
+    document.getElementById('hour').style.color='red';
+    document.getElementById('minute').style.color='red';
+    document.getElementById('dot1').style.color='red';
+    document.getElementById('dot2').style.color='red';
 })
 
 $('#card').on('click', function () {
@@ -330,6 +373,15 @@ $('#card').on('click', function () {
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
     $('#confirm_red').fadeIn(200)
+    
+    document.getElementById('storeinfo1').style.color='red';
+    document.getElementById('week').style.color='red';
+    document.getElementById('month').style.color='red';
+    document.getElementById('day').style.color='red';
+    document.getElementById('hour').style.color='red';
+    document.getElementById('minute').style.color='red';
+    document.getElementById('dot1').style.color='red';
+    document.getElementById('dot2').style.color='red';
 })
 
 $('#yoyo').on('click', function () {
@@ -342,6 +394,15 @@ $('#yoyo').on('click', function () {
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
     $('#confirm_red').fadeIn(200)
+    
+    document.getElementById('storeinfo1').style.color='red';
+    document.getElementById('week').style.color='red';
+    document.getElementById('month').style.color='red';
+    document.getElementById('day').style.color='red';
+    document.getElementById('hour').style.color='red';
+    document.getElementById('minute').style.color='red';
+    document.getElementById('dot1').style.color='red';
+    document.getElementById('dot2').style.color='red';
 })
 
 /*select time*/

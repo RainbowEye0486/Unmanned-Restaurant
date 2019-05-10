@@ -416,11 +416,16 @@ body {
   background-color: red;
 }
 
+
 .step1 {
   position: absolute;
   width: 25%;
   height: 100%;
-  padding: 2.5vw 0 0 2vw;
+  padding: 0.5% 0 0 2vw;
+}
+
+#chtext2{
+  margin: 0 0 7px 0;
 }
 
 #choosebotton {
@@ -437,8 +442,8 @@ body {
 #mapbox {
   display: none;
   top: 0;
-  width: 78%;
-  height: 45%;
+  width: 200%;
+  height: 60%;
   left: 0%;
   border-radius: 20px;
   -ms-flex-line-pack: center;
@@ -465,7 +470,7 @@ body {
   top: 0%;
   padding: 15px 0px 5px 0px;
   text-align: left;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: bold;
   color: white;
   font-family: Microsoft JhengHei;
@@ -476,7 +481,7 @@ body {
   top: 0%;
   padding: 0px 0px 0px 0px;
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: white;
   font-family: Microsoft JhengHei;
@@ -487,13 +492,16 @@ body {
   left: 25%;
   height: 100%;
   width: 70%;
+  padding: 0.5% 0 0 4vw;
+  display: none;
 }
 
 .step3 {
   position: absolute;
-  left: 50%;
+  left: 49%;
   height: 100%;
   width: 33%;
+  padding: 0.5% 0 0 0;
   display: none;
 }
 
@@ -503,67 +511,67 @@ body {
 
 .button_step {
   font-weight: bold;
-  font-size: 20px;
+  line-height: 0;
+  font-size: 26px;
   border-radius: 10px;
   height: 45px;
 }
 
 #default {
-  position: absolute;
+  position: relative;
   width: 18%;
-  top: 18%;
+  top: 0%;
   left: 0;
 }
 
 #self_defind {
-  position: absolute;
+  position: relative;
   width: 18%;
-  top: 18%;
-  left: 20%;
+  top: 0%;
+  left: 1.2%;
 }
 
 .payBlock {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 48%;
-  top: 20%;
+  top: 0%;
 }
 
 #line {
-  position: absolute;
+  position: relative;
   width: 48%;
-  left: 0;
-  top: 0;
+  left: 0%;
+  top: -2vw;
   cursor: pointer;
 }
 
 #wallet {
-  position: absolute;
+  position: relative;
   width: 48%;
-  left: 0;
-  bottom: 0;
+  left: 0%;
+  top: -2.7vw;
   cursor: pointer;
 }
 
 #card {
-  position: absolute;
+  position: relative;
   width: 48%;
-  right: 0;
-  top: 0;
+  left: 5%;
+  top: 0%;
   cursor: pointer;
 }
 
 #yoyo {
-  position: absolute;
+  position: relative;
   width: 48%;
-  right: 0;
-  bottom: 0;
+  left: 5%;
+  top: 0%;
   cursor: pointer;
 }
 
 #confirm_red {
-  position: absolute;
-  bottom: 23%;
+  position: relative;
+  top: 0%;
   background-color: red;
   font-weight: bold;
   font-size: 20px;
@@ -574,11 +582,11 @@ body {
 }
 
 .time_block {
-  position: absolute;
+  position: relative;
   width: 18%;
   height: 50%;
-  top: 28%;
-  padding: 5px;
+  top: 0%;
+  padding: 10px;
   background-color: black;
   overflow: hidden;
   font-size: 30px;
@@ -600,7 +608,10 @@ body {
 
 #cost {
   display: none;
-  left: 20%;
+  position: relative;
+  width: 18%;
+  top: -100%;
+  left: 19.5%;
 }
 
 .next {
@@ -608,15 +619,15 @@ body {
   position: absolute;
   width: 70%;
   left: 15%;
-  bottom: 15%;
+  bottom: 8%;
 }
 
 .time_table {
-  position: absolute;
+  position: relative;
   width: 50%;
   height: 50%;
-  top: 28%;
-  left: 38%;
+  top: -50%;
+  left: 37%;
   background-color: #e6e6e6;
   padding: 20px;
   display: none;

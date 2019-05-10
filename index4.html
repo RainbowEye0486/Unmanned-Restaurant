@@ -44,7 +44,7 @@
 		        <b id="chtext1" style="font-size:34px;color: azure;font-family: Microsoft JhengHei;">選擇取餐門市</b>
                 <button type="button" class="btn btn-secondary btn-lg button_step opacity" id="chtext2" style="display:none;font-family: Microsoft JhengHei;">重新選擇取餐門市</button>
                 <br><br>
-                <div id="choosebotton"><img src="./img/工作區域 40.png" onclick="myFunctionchoose()" style="cursor:pointer"></div>
+                <div id="choosebotton"><img src="./img/工作區域 40.png" onclick="myFunctionchoose()" style="cursor:pointer; width:95%;"></div>
                 <div id="mapbox"></div>
                 <div id="mapboximg" width="156%" height="90%" style="width:78%;height:45%;"><img id="mapboximgin" src="" style="border-radius: 20px;"></div>
                 <div id="storeinfo1"></div>
@@ -53,16 +53,17 @@
             <div class="step2">
                 <button type="button" class="btn btn-secondary btn-lg button_step" id='step2_btn'>STEP2</button>
                 <br><br>
-                <b style="font-size:30px;color: azure;font-family: Microsoft JhengHei;">選擇取餐時間</b>
-                <button type="button" class="btn btn-secondary btn-lg button_step" id='default'>系統預定</button>
-                <button type="button" class="btn btn-secondary btn-lg button_step opacity"
-                    id='self_defind'>自行設定</button>
+                <b id="getimetext" style="font-size:34px;color: azure;font-family: Microsoft JhengHei;">選擇取餐時間</b>
+                <br><br>
+                <button type="button" class="btn btn-secondary btn-lg button_step" id='default' style="font-family: Microsoft JhengHei;">系統預定</button>
+                <button type="button" class="btn btn-secondary btn-lg button_step opacity" id='self_defind' style="font-family: Microsoft JhengHei;">自行設定</button>
+                <br><br>
                 <div class="time_block" id='defa'>
                     <p id="week">TUE</p>
-                    <span id="month">MAY</span><span>,</span>
+                    <span id="month">MAY</span><span id="dot1">,</span>
                     <span id="day">15</span>
                     <br>
-                    <span id="hour">11</span><span>:</span>
+                    <span id="hour">11</span><span id="dot2">:</span>
                     <span id="minute">50</span>
                     <button type="button" class="btn btn-secondary btn-lg button_step next" id='next1'>NEXT</button>
                 </div>
@@ -102,11 +103,12 @@
             <div class="step3">
                 <button type="button" class="btn btn-secondary btn-lg button_step" id='step3_btn'>STEP3</button>
                 <br><br>
-                <b style="font-size:30px;color: azure;">選擇付費方式</b>
+                <b id="paytext" style="font-size:34px;color: azure;font-family: Microsoft JhengHei;">選擇付費方式</b>
+                <br><br>
                 <div class="payBlock">
                     <img class='opacity' src="./img/linepay.png" id='line'>
-                    <img class='opacity' src="./img/mywallet.png" id="wallet">
                     <img class='opacity' src="./img/card.png" id="card">
+                    <img class='opacity' src="./img/mywallet.png" id="wallet">
                     <img class='opacity' src="./img/yoyo.png" id="yoyo">
                 </div>
                 <button type="button" class="btn btn-primary btn-lg btn-block" id='confirm_red'>CONFIRM AND PAY</button>
