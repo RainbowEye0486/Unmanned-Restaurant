@@ -66,6 +66,14 @@ body {
   //border: 2px solid;
 }
 
+.wrap #top_regin {
+  width: 88%;
+  height: 8%;
+  text-align: center;
+  float: right;
+  clear: both;
+}
+
 .wrap .sidebar_region {
   position: absolute;
   width: 12%;
@@ -135,11 +143,55 @@ body {
 
 .wrap .mid_region {
   width: 88%;
-  height: 87%;
+  height: 92%;
   position: absolute;
   right: 0%;
   bottom: 0%;
  // border: 3px solid red;
+}
+
+/*member page*/
+.left {
+  width: 18%;
+  height: 100%;
+  float: left;
+  border: 3px solid red;
+}
+
+.right {
+  width: 82%;
+  height: 100%;
+  float: right;
+  border: 3px solid red;
+}
+
+.per_icon {
+  margin: 6px 0 0 0;
+}
+
+#head {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  border: 3px solid white;
+  margin: 0 0 25px 0;
+}
+
+#personal {
+  position: relative;
+  width: 100%;
+  height: 15.8vw;
+  border: 3px solid white;
+  margin: 0 0 25px 0;
+}
+
+#personalbox {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 28vw;
+  border: 3px solid white;
 }
 
 /*this is third page config*/
@@ -152,6 +204,206 @@ body {
   transform: translate(0%, 0%);
   //border: 2px solid gray;
 }
+
+#signin {
+  display: none;
+  position: absolute;
+  background-image: url("../img/工作區域 1 (2).png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 10%;
+  left: 10%;
+  width: 60vw;
+  height: 35vw;
+}
+
+#signin_text {
+  font-size:5vw;
+  color: white;
+  width: 22vw;
+  padding: 13px 0 0 4vw;
+}
+
+#signup1 {
+  position: absolute;
+  font-size: 0.8vw;
+  top: 5vw;
+  left: 35vw;
+  width: 15vw;
+  height: 2vw;
+  font-family: Microsoft JhengHei;
+  background-color: black;
+  color:gray;
+}
+
+#mail_text {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 0 0 0 4vw;
+}
+
+#mail_input {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#passward_text {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 5px 0 0 4vw;
+}
+
+#passward_input {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#forgetpassward_text {
+  font-size:0.5vw;
+  color: white;
+  padding: 0 0 0 4vw;
+}
+
+#signinbotton {
+  position: absolute;
+  font-size: 1.5vw;
+  bottom: 5vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.8vw;
+}
+
+#fbbotton {
+  position: absolute;
+  font-size: 0.8vw;
+  bottom: 2vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.2vw;
+  background-color: #0066FF;
+}
+
+
+
+#signup {
+  display: none;
+  position: absolute;
+  background-image: url("../img/工作區域 1 (2).png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 10%;
+  left: 10%;
+  width: 60vw;
+  height: 35vw;
+}
+
+
+#signup_text {
+  font-size:5vw;
+  color: white;
+  width: 22vw;
+  padding: 13px 0 0 4vw;
+}
+
+#signup2 {
+  position: absolute;
+  font-size: 0.8vw;
+  top: 5vw;
+  left: 35vw;
+  width: 15vw;
+  height: 2vw;
+  font-family: Microsoft JhengHei;
+  background-color: black;
+  color:gray;
+}
+
+#name_text_up {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 0 0 0 4vw;
+}
+
+#name_input_up {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#mail_text_up {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 5px 0 0 4vw;
+}
+
+#mail_input_up {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#passward_text_up {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 5px 0 0 4vw;
+}
+
+#passward_input_up {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#signupbotton {
+  position: absolute;
+  font-size: 1.5vw;
+  bottom: 5vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.8vw;
+}
+
+#fbbotton_up {
+  position: absolute;
+  font-size: 0.8vw;
+  bottom: 2vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.2vw;
+  background-color: #0066FF;
+}
+
 
 
 
