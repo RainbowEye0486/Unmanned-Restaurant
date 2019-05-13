@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 /*this is first page config*/
 body {
   background-color: #333333;
@@ -205,96 +205,136 @@ body {
   //border: 2px solid gray;
 }
 
+/*這裡以下CSS改過*/
+
 #signin {
   display: none;
   position: absolute;
-  background-image: url("../img/工作區域 1 (2).png");
-  background-repeat: no-repeat;
-  background-size: contain;
   top: 10%;
   left: 10%;
-  width: 60vw;
-  height: 35vw;
+  width: 65%;
+}
+
+#signin_bg{
+  position: relative;
+  left: 10%;
+  width: 100%;
+  opacity: 0;
 }
 
 #signin_text {
-  font-size:5vw;
+  position: absolute;
+  bottom: 79%;
+  left: 6.5%;
+  font-size:4vw;
   color: white;
-  width: 22vw;
-  padding: 13px 0 0 4vw;
+  height: 10%;
+  width: 30%;
+  font-weight: bold;
+  opacity: 0;
 }
 
 #signup1 {
   position: absolute;
-  font-size: 0.8vw;
-  top: 5vw;
-  left: 35vw;
-  width: 15vw;
-  height: 2vw;
+  bottom: 78%;
+  left: 62%;
+  width: 28%;
+  height: 5%;
+  font-size: 0.9vw;
+  font-weight: lighter;
+  opacity: 0;
   font-family: Microsoft JhengHei;
   background-color: black;
-  color:gray;
+  color: gray;
 }
 
 #mail_text {
+  position: absolute;
+  bottom: 67%;
+  left: 6.5%;
   font-size:1.1vw;
   font-weight: bold;
   color: white;
-  padding: 0 0 0 4vw;
+  height: 5%;
+  width: 15%;
+  transform: scale(1, 1);
+  opacity: 0;
 }
 
 #mail_input {
-  position: relative;
-  top: -0.6vw;
-  left: 4vw;
-  width: 22vw;
-  height: 2.5vw;
+  position: absolute;
+  bottom: 59%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-size: 1.2vw;
   background-color: black;
   color: white;
-  border-radius: 7px;
+  border-radius: 10px;
+  opacity: 0;
 }
 
 #passward_text {
+  position: absolute;
+  bottom: 45%;
+  left: 6.5%;
   font-size:1.1vw;
   font-weight: bold;
   color: white;
-  padding: 5px 0 0 4vw;
+  height: 5%;
+  width: 15%;
+  transform: scale(1, 1);
+  opacity: 0;
 }
 
 #passward_input {
-  position: relative;
-  top: -0.6vw;
-  left: 4vw;
-  width: 22vw;
-  height: 2.5vw;
+  position: absolute;
+  bottom: 39%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-size: 1.2vw;
   background-color: black;
   color: white;
-  border-radius: 7px;
+  border-radius: 10px;
+  opacity: 0;
 }
 
 #forgetpassward_text {
-  font-size:0.5vw;
+  position: absolute;
+  bottom: 34%;
+  left: 6.5%;
+  font-size:1vw;
   color: white;
-  padding: 0 0 0 4vw;
+  height: 5%;
+  width: 15%;
+  transform: scale(1, 1);
+  opacity: 0;
+  font-weight: lighter;
 }
 
 #signinbotton {
   position: absolute;
-  font-size: 1.5vw;
-  bottom: 5vw;
-  left: 4vw;
-  width: 22vw;
-  height: 2.8vw;
+  bottom: 13%;
+  left: 6.5%;
+  width: 38%;
+  height: 10%;
+  font-size: 1.8vw;
+  font-weight: bold;
+  opacity: 0;
 }
 
 #fbbotton {
   position: absolute;
-  font-size: 0.8vw;
-  bottom: 2vw;
-  left: 4vw;
-  width: 22vw;
-  height: 2.2vw;
-  background-color: #0066FF;
+  bottom: 2.5%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.1vw;
+  font-weight: lighter;
+  opacity: 0;
+  background-color: rgb(46, 125, 245);
 }
 
 
@@ -302,109 +342,145 @@ body {
 #signup {
   display: none;
   position: absolute;
-  background-image: url("../img/工作區域 1 (2).png");
-  background-repeat: no-repeat;
-  background-size: contain;
   top: 10%;
   left: 10%;
-  width: 60vw;
-  height: 35vw;
+  width: 65%;
 }
 
+#signup_bg{
+  position: relative;
+  left: 10%;
+  width: 100%;
+  opacity: 0;
+}
 
 #signup_text {
-  font-size:5vw;
+  position: absolute;
+  bottom: 79%;
+  left: 6.5%;
+  font-size:4vw;
   color: white;
-  width: 22vw;
-  padding: 13px 0 0 4vw;
+  height: 10%;
+  width: 30%;
+  font-weight: bold;
+  opacity: 0;
 }
 
 #signup2 {
   position: absolute;
-  font-size: 0.8vw;
-  top: 5vw;
-  left: 35vw;
-  width: 15vw;
-  height: 2vw;
+  bottom: 78%;
+  left: 62%;
+  width: 28%;
+  height: 5%;
+  font-size: 0.9vw;
+  font-weight: lighter;
+  opacity: 0;
   font-family: Microsoft JhengHei;
   background-color: black;
-  color:gray;
+  color: gray;
 }
 
 #name_text_up {
+  position: absolute;
+  bottom: 67%;
+  left: 6.5%;
   font-size:1.1vw;
   font-weight: bold;
   color: white;
-  padding: 0 0 0 4vw;
+  height: 5%;
+  width: 15%;
+  opacity: 0;
 }
 
 #name_input_up {
-  position: relative;
-  top: -0.6vw;
-  left: 4vw;
-  width: 22vw;
-  height: 2.5vw;
+  position: absolute;
+  bottom: 62%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-size: 1.2vw;
   background-color: black;
   color: white;
-  border-radius: 7px;
+  border-radius: 10px;
+  opacity: 0;
 }
 
 #mail_text_up {
+  position: absolute;
+  bottom: 53%;
+  left: 6.5%;
   font-size:1.1vw;
   font-weight: bold;
   color: white;
-  padding: 5px 0 0 4vw;
+  height: 5%;
+  width: 15%;
+  opacity: 0;
 }
 
 #mail_input_up {
-  position: relative;
-  top: -0.6vw;
-  left: 4vw;
-  width: 22vw;
-  height: 2.5vw;
+  position: absolute;
+  bottom: 48%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-size: 1.2vw;
   background-color: black;
   color: white;
-  border-radius: 7px;
+  border-radius: 10px;
+  opacity: 0;
 }
 
 #passward_text_up {
+  position: absolute;
+  bottom: 39%;
+  left: 6.5%;
   font-size:1.1vw;
   font-weight: bold;
   color: white;
-  padding: 5px 0 0 4vw;
+  height: 5%;
+  width: 15%;
+  transform: scale(1, 1);
+  opacity: 0;
 }
 
 #passward_input_up {
-  position: relative;
-  top: -0.6vw;
-  left: 4vw;
-  width: 22vw;
-  height: 2.5vw;
+  position: absolute;
+  bottom: 34%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-size: 1.2vw;
   background-color: black;
   color: white;
-  border-radius: 7px;
+  border-radius: 10px;
+  opacity: 0;
 }
 
 #signupbotton {
   position: absolute;
-  font-size: 1.5vw;
-  bottom: 5vw;
-  left: 4vw;
-  width: 22vw;
-  height: 2.8vw;
+  bottom: 13%;
+  left: 6.5%;
+  width: 38%;
+  height: 10%;
+  font-size: 1.8vw;
+  font-weight: bold;
+  opacity: 0;
 }
 
 #fbbotton_up {
   position: absolute;
-  font-size: 0.8vw;
-  bottom: 2vw;
-  left: 4vw;
-  width: 22vw;
-  height: 2.2vw;
-  background-color: #0066FF;
+  bottom: 2.5%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.1vw;
+  font-weight: lighter;
+  opacity: 0;
+  background-color: rgb(46, 125, 245);
 }
 
-
+/*到這裡*/
 
 
 .shadow {

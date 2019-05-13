@@ -528,19 +528,7 @@ $("#visiter_img").hover(
 
 
 
- //memberlogin function
- $("#memberlogin_img").hover(
-    function() {
-       $(this).attr("src","./img/工作區域 5.png");
-    },
-    function() {
-       $(this).attr("src","./img/工作區域 2.png");
-    }
- );
- $('#memberlogin_img').on('click',function(){
-    $('.mid_icon').hide()
-    $('#signin').fadeIn(300)
- });
+
 
 
  //registered function
@@ -555,4 +543,219 @@ $("#visiter_img").hover(
  $('#registered_img').on('click',function(){
     $('.mid_icon').hide()
     $('#signup').fadeIn(300)
+ });
+
+
+
+
+ //memberlogin function
+ $("#memberlogin_img").hover(
+    function() {
+       $(this).attr("src","./img/工作區域 5.png");
+    },
+    function() {
+       $(this).attr("src","./img/工作區域 2.png");
+    }
+ );
+
+
+
+//以下為SIGNIN/SIGNUP動畫 按外部icon時觸發
+
+
+ $('#memberlogin_img').on('click',function(){
+    $('.mid_icon').hide();
+    $('#signin').show();
+    $('#signin_bg').animate({
+        opacity: 1,
+        left: '0%'
+    }, 600);
+    $('#signin_text').delay(300).animate({
+        opacity: 1,
+        bottom: '83.5%'
+    }, 300);
+    $('#mail_text').delay(400).animate({
+        opacity: 1,
+        bottom: '69%'
+    }, 300);
+    $('#mail_input').delay(400).animate({
+        opacity: 1,
+        bottom: '63%'
+    }, 300);
+    $('#passward_text').delay(500).animate({
+        opacity: 1,
+        bottom: '52%'
+    }, 300);
+    $('#passward_input').delay(500).animate({
+        opacity: 1,
+        bottom: '46%'
+    }, 300);
+    $('#forgetpassward_text').delay(650).animate({
+        opacity: 1,
+        bottom: '39%'
+    }, 300);
+    $('#signinbotton').delay(550).animate({
+        opacity: 1,
+        bottom: '20%'
+    }, 300);
+    $('#fbbotton').delay(650).animate({
+        opacity: 1,
+        bottom: '9.5%'
+    }, 300);
+    $('#signup1').delay(650).animate({
+        opacity: 1,
+        bottom: '80%'
+    }, 300);
+ });
+
+
+
+ $('#signinbotton').unbind('click').click(function(){
+    $('#signin_text').delay(350).animate({
+        opacity: 0,
+        bottom: '79%'
+    }, 300);
+    $('#mail_text').delay(400).animate({
+        opacity: 0,
+        bottom: '67%'
+    }, 300);
+    $('#mail_input').delay(450).animate({
+        opacity: 0,
+        bottom: '59%'
+    }, 300);
+    $('#passward_text').delay(500).animate({
+        opacity: 0,
+        bottom: '45%'
+    }, 300);
+    $('#passward_input').delay(550).animate({
+        opacity: 0,
+        bottom: '39%'
+    }, 300);
+    $('#forgetpassward_text').delay(900).animate({
+        opacity: 0,
+        bottom: '35%'
+    }, 200);
+    $('#signinbotton').delay(650).animate({
+        opacity: 0,
+        bottom: '18%'
+    }, 300);
+    $('#fbbotton').delay(700).animate({
+        opacity: 0,
+        bottom: '2.5%'
+    }, 300);
+    $('#signup1').delay(800).animate({
+        opacity: 0,
+        bottom: '78%'
+    }, 300);
+    $('#signin_bg').delay(1000).animate({
+        opacity: 0,
+        left: '10%'
+    }, 500);
+    $('#signin').delay(1050).hide();
+ })
+
+ $('#registered_img').on('click',function(){
+    $('.mid_icon').hide();
+    $('#signup').show();
+    $('#signup_bg').animate({
+        opacity: 1,
+        left: '0%'
+    }, 600);
+    $('#signup_text').delay(300).animate({
+        opacity: 1,
+        bottom: '84.5%'
+    }, 300);
+    $('#name_text_up').delay(400).animate({
+        opacity: 1,
+        bottom: '70%'
+    }, 300);
+    $('#name_input_up').delay(400).animate({
+        opacity: 1,
+        bottom: '65%'
+    }, 300);
+    $('#mail_text_up').delay(500).animate({
+        opacity: 1,
+        bottom: '56%'
+    }, 300);
+    $('#mail_input_up').delay(500).animate({
+        opacity: 1,
+        bottom: '51%'
+    }, 300);
+    $('#passward_text_up').delay(600).animate({
+        opacity: 1,
+        bottom: '42%'
+    }, 500);
+    $('#passward_input_up').delay(600).animate({
+        opacity: 1,
+        bottom: '37%'
+    }, 500);
+    $('#forgetpassward_text').delay(850).animate({
+        opacity: 1,
+        bottom: '39%'
+    }, 200);
+    $('#signupbotton').delay(650).animate({
+        opacity: 1,
+        bottom: '20%'
+    }, 400);
+    $('#fbbotton_up').delay(750).animate({
+        opacity: 1,
+        bottom: '9.5%'
+    }, 300);
+    $('#signup2').delay(750).animate({
+        opacity: 1,
+        bottom: '80%'
+    }, 300);
+ });
+
+ $('#signupbotton').on('click',function(){
+    
+    $('#signup_text').delay(0).animate({
+        opacity: 0,
+        bottom: '81.5%'
+    }, 300);
+    $('#name_text_up').delay(100).animate({
+        opacity: 0,
+        bottom: '67%'
+    }, 300);
+    $('#name_input_up').delay(100).animate({
+        opacity: 0,
+        bottom: '62%'
+    }, 300);
+    $('#mail_text_up').delay(200).animate({
+        opacity: 0,
+        bottom: '53%'
+    }, 300);
+    $('#mail_input_up').delay(200).animate({
+        opacity: 0,
+        bottom: '48%'
+    }, 300);
+    $('#passward_text_up').delay(300).animate({
+        opacity: 0,
+        bottom: '39%'
+    }, 500);
+    $('#passward_input_up').delay(300).animate({
+        opacity: 0,
+        bottom: '34%'
+    }, 500);
+    $('#forgetpassward_text').delay(550).animate({
+        opacity: 0,
+        bottom: '36%'
+    }, 200);
+    $('#signupbotton').delay(350).animate({
+        opacity: 0,
+        bottom: '17%'
+    }, 400);
+    $('#fbbotton_up').delay(450).animate({
+        opacity: 0,
+        bottom: '6.5%'
+    }, 300);
+    $('#signup2').delay(450).animate({
+        opacity: 0,
+        bottom: '77%'
+    }, 300);
+    $('#signup_bg').delay(700).animate({
+        opacity: 0,
+        left: '10%'
+    }, 400);
+    $('#signin').delay(1300).hide();
  });
