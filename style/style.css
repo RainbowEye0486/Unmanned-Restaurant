@@ -1,0 +1,932 @@
+﻿@charset "UTF-8";
+/*this is first page config*/
+body {
+  background-color: #333333;
+  -ms-overflow-style: none;
+  height: 100%;
+  width: calc(100vw + 18px);
+  overflow: auto;
+  font-family: url(../font/微软正黑体.ttf);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  position: relative;
+  top: 20%;
+  width: 30%;
+  height: 53%;
+  left: 35%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  //border: 2px solid;
+}
+
+.main #logo_img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70%;
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  //border: 2px solid;
+}
+
+.main #button_start {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 30%;
+  //border: 2px solid;
+}
+
+.main .btn-primary {
+  position: absolute;
+  width: 100%;
+}
+
+/*this is second page config*/
+.wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  //border: 3px solid red;
+}
+
+.wrap nav {
+  width: 88%;
+  height: 13%;
+  text-align: center;
+  float: right;
+  clear: both;
+  //border: 2px solid;
+}
+
+.wrap #top_regin {
+  width: 88%;
+  height: 8%;
+  text-align: center;
+  float: right;
+  clear: both;
+}
+
+.wrap .sidebar_region {
+  position: absolute;
+  width: 12%;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  line-height: 400px;
+  float: left;
+  //border: 2px solid blue;
+  //border: 2px solid;
+}
+
+.wrap .sidebar_region #logo {
+  position: absolute;
+  margin: 10%;
+  width: 80%;
+  height: 20%;
+  background-image: url("../img/LOGO (3).png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.wrap .sidebar_region .side_icon {
+  position: absolute;
+  display: block;
+  margin: 10%;
+  left: 10%;
+  /*
+            width:60%;
+            height:10%;
+            text-align: center;*/
+  padding-left: 25%;
+  /* padding-right: 10%;
+            line-height: 2px;*/
+  position: absolute;
+  width: 35%;
+  height: 0;
+  padding-bottom: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  //border: 2px solid gray;
+}
+
+.wrap .order_region {
+  position: absolute;
+  width: 52%;
+  height: 81.3%;
+  top: 13%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 12%;
+  margin-right: 36%;
+  //border: 2px solid;
+}
+
+.wrap .shopping_region {
+  position: absolute;
+  top: 13%;
+  right: 0;
+  width: 36%;
+  height: 81.3%;
+  text-align: center;
+  //border: 2px solid;
+}
+
+.wrap .mid_region {
+  width: 88%;
+  height: 92%;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+ // border: 3px solid red;
+}
+
+/*member page*/
+.left {
+  width: 18%;
+  height: 100%;
+  float: left;
+  border: 3px solid red;
+}
+
+.right {
+  width: 82%;
+  height: 100%;
+  float: right;
+  border: 3px solid red;
+}
+
+.per_icon {
+  margin: 6px 0 0 0;
+}
+
+#head {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  border: 3px solid white;
+  margin: 0 0 25px 0;
+}
+
+#personal {
+  position: relative;
+  width: 100%;
+  height: 15.8vw;
+  border: 3px solid white;
+  margin: 0 0 25px 0;
+}
+
+#personalbox {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 28vw;
+  border: 3px solid white;
+}
+
+/*this is third page config*/
+.wrap .mid_region .mid_icon {
+  display: inline-block;
+  position: relative;
+  margin: 0px 6.5vw 0px 0px;
+  left: 8vw;
+  top: 7.5vw;
+  transform: translate(0%, 0%);
+  //border: 2px solid gray;
+}
+
+#signin {
+  display: none;
+  position: absolute;
+  background-image: url("../img/工作區域 1 (2).png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 10%;
+  left: 10%;
+  width: 60vw;
+  height: 35vw;
+}
+
+#signin_text {
+  font-size:5vw;
+  color: white;
+  width: 22vw;
+  padding: 13px 0 0 4vw;
+}
+
+#signup1 {
+  position: absolute;
+  font-size: 0.8vw;
+  top: 5vw;
+  left: 35vw;
+  width: 15vw;
+  height: 2vw;
+  font-family: Microsoft JhengHei;
+  background-color: black;
+  color:gray;
+}
+
+#mail_text {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 0 0 0 4vw;
+}
+
+#mail_input {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#passward_text {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 5px 0 0 4vw;
+}
+
+#passward_input {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#forgetpassward_text {
+  font-size:0.5vw;
+  color: white;
+  padding: 0 0 0 4vw;
+}
+
+#signinbotton {
+  position: absolute;
+  font-size: 1.5vw;
+  bottom: 5vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.8vw;
+}
+
+#fbbotton {
+  position: absolute;
+  font-size: 0.8vw;
+  bottom: 2vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.2vw;
+  background-color: #0066FF;
+}
+
+
+
+#signup {
+  display: none;
+  position: absolute;
+  background-image: url("../img/工作區域 1 (2).png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 10%;
+  left: 10%;
+  width: 60vw;
+  height: 35vw;
+}
+
+
+#signup_text {
+  font-size:5vw;
+  color: white;
+  width: 22vw;
+  padding: 13px 0 0 4vw;
+}
+
+#signup2 {
+  position: absolute;
+  font-size: 0.8vw;
+  top: 5vw;
+  left: 35vw;
+  width: 15vw;
+  height: 2vw;
+  font-family: Microsoft JhengHei;
+  background-color: black;
+  color:gray;
+}
+
+#name_text_up {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 0 0 0 4vw;
+}
+
+#name_input_up {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#mail_text_up {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 5px 0 0 4vw;
+}
+
+#mail_input_up {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#passward_text_up {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 5px 0 0 4vw;
+}
+
+#passward_input_up {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#signupbotton {
+  position: absolute;
+  font-size: 1.5vw;
+  bottom: 5vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.8vw;
+}
+
+#fbbotton_up {
+  position: absolute;
+  font-size: 0.8vw;
+  bottom: 2vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.2vw;
+  background-color: #0066FF;
+}
+
+
+
+
+.shadow {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  background-color: #fcfafa;
+  opacity: 0.5;
+  z-index: 100;
+  display: none;
+}
+
+#menber {
+  background-image: url("../img/member.png");
+  margin: 5%;
+  top: 25%;
+  border-radius: 5px;
+}
+
+#menu {
+  background-image: url("../img/menu.png");
+  margin: 5%;
+  top: 37%;
+  border-radius: 5px;
+}
+
+#map {
+  background-image: url("../img/map.png");
+  margin: 5%;
+  top: 49%;
+  border-radius: 5px;
+}
+
+.hamburger {
+  position: absolute;
+  width: 35%;
+  height: 0;
+  padding-bottom: 35%;
+  background-color: blanchedalmond;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  border: 2px solid;
+}
+
+#burger1 {
+  top: 0%;
+  left: 10%;
+  background-image: url("../img/27b6fd380a9a43f742508a1d18bf67ee.jpg");
+}
+
+#burger2 {
+  top: 0%;
+  right: 10%;
+  background-image: url("../img/fe8a821d11269ba7e8ded9432331cd35.jpg");
+}
+
+#burger3 {
+  bottom: 0%;
+  left: 10%;
+  background-image: url("../img/fe8a821d11269ba7e8ded9432331cd35.jpg");
+}
+
+#burger4 {
+  bottom: 0%;
+  right: 10%;
+  background-image: url("../img/27b6fd380a9a43f742508a1d18bf67ee.jpg");
+}
+
+.rating {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 30%;
+  height: 20px;
+}
+
+.glyphicon-star:before {
+  color: gold;
+  font-size: 20px;
+  height: 100%;
+}
+
+.rating_text {
+  color: gold;
+  font-size: 20px;
+  height: 100%;
+  margin: 0%;
+  top: -15%;
+}
+
+.cal {
+  color: white;
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  font-size: 16px;
+}
+
+.cal span {
+  font-size: 25px;
+}
+
+.container_pic {
+  position: absolute;
+  bottom: 0%;
+  background-color: white;
+  opacity: 0.8;
+  padding: 3px;
+  font-size: 20px;
+  text-align: center;
+  overflow: hidden;
+  line-height: 85%;
+}
+
+.container_pic .food_name {
+  font-size: 25px;
+}
+
+.container_pic .food_content {
+  font-size: 12px;
+}
+
+.container_pic .food_price {
+  font-size: 30px;
+  color: red;
+}
+
+.plus_btn {
+  position: absolute;
+  right: -10%;
+  top: 40%;
+  background-image: url("../img/add-circular-outlined-button.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 20%;
+}
+
+.shoping_cart {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 75%;
+  height: 100%;
+  background-color: #c8cecf;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cart_pic {
+  width: 100%;
+}
+
+.append_rigion {
+  position: absolute;
+  overflow: scroll;
+  width: 100%;
+  height: 60%;
+  top: 20%;
+  border: 2px solid;
+}
+
+.order_list {
+  position: relative;
+  width: 85%;
+  height: 85px;
+  background-color: azure;
+  margin: 13px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px #304753;
+          box-shadow: 5px #304753;
+}
+
+.order_name {
+  font-size: 20px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.ingredient {
+  font-size: 12px;
+  bottom: 19px;
+  position: absolute;
+  left: 10px;
+  margin: 0%;
+}
+
+.sauce {
+  font-size: 12px;
+  bottom: 0%;
+  position: absolute;
+  left: 10px;
+  bottom: 2px;
+  margin: 0%;
+}
+
+.single_price {
+  position: absolute;
+  font-size: 20px;
+  top: 5px;
+  right: 5%;
+}
+
+.delete_btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 15px;
+  right: -10%;
+  border: 2px solid;
+}
+
+.add_btn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  right: 20%;
+  border: 2px solid;
+}
+
+.minus_btn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  right: 40%;
+  border: 2px solid;
+}
+
+.order_number {
+  position: absolute;
+  font-size: 20px;
+  top: 5px;
+  right: 32%;
+}
+
+.total_pay {
+  position: absolute;
+  font-size: 45px;
+  bottom: 10%;
+  letter-spacing: 5px;
+  left: 20%;
+}
+
+/*modal control*/
+.modal-body {
+  width: 60%;
+  height: 40%;
+}
+
+/*modal control*/
+/*this is third page config*/
+.red {
+  background-color: red;
+}
+
+.red hover {
+  background-color: red;
+}
+
+
+.step1 {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  padding: 0.5% 0 0 2vw;
+}
+
+#chtext2{
+  margin: 0 0 7px 0;
+}
+
+#choosebotton {
+  position: relative;
+  top: 0;
+  width: 65%;
+  height: 40%;
+  left: 0%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  z-index: 1;
+}
+
+#mapbox {
+  display: none;
+  top: 0;
+  width: 200%;
+  height: 60%;
+  left: 0%;
+  border-radius: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  z-index: 0;
+}
+
+
+#mapboximg {
+  display: none;
+  position: relative;
+  top: -45%;
+  //width: 78%;
+  //height: 45%;
+  left: 0%;
+  border-radius: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  z-index: 5;
+}
+
+#storeinfo1 {
+  position: relative;
+  top: 0%;
+  padding: 15px 0px 5px 0px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  font-family: Microsoft JhengHei;
+}
+
+#storeinfo2 {
+  position: relative;
+  top: 0%;
+  padding: 0px 0px 0px 0px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  font-family: Microsoft JhengHei;
+}
+
+.step2 {
+  position: absolute;
+  left: 25%;
+  height: 100%;
+  width: 70%;
+  padding: 0.5% 0 0 4vw;
+  display: none;
+}
+
+.step3 {
+  position: absolute;
+  left: 49%;
+  height: 100%;
+  width: 33%;
+  padding: 0.5% 0 0 0;
+  display: none;
+}
+
+.opacity {
+  opacity: 0.4;
+}
+
+.button_step {
+  font-weight: bold;
+  line-height: 0;
+  font-size: 26px;
+  border-radius: 10px;
+  height: 45px;
+}
+
+#default {
+  position: relative;
+  width: 18%;
+  top: 0%;
+  left: 0;
+}
+
+#self_defind {
+  position: relative;
+  width: 18%;
+  top: 0%;
+  left: 1.2%;
+}
+
+.payBlock {
+  position: relative;
+  width: 100%;
+  top: 0%;
+}
+
+#line {
+  position: relative;
+  width: 48%;
+  left: 0%;
+  top: -2vw;
+  cursor: pointer;
+}
+
+#wallet {
+  position: relative;
+  width: 48%;
+  left: 0%;
+  top: -2.7vw;
+  cursor: pointer;
+}
+
+#card {
+  position: relative;
+  width: 48%;
+  left: 5%;
+  top: 0%;
+  cursor: pointer;
+}
+
+#yoyo {
+  position: relative;
+  width: 48%;
+  left: 5%;
+  top: 0%;
+  cursor: pointer;
+}
+
+#confirm_red {
+  position: relative;
+  top: 0%;
+  background-color: red;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  height: 45px;
+  left: 0;
+  display: none;
+}
+
+.time_block {
+  position: relative;
+  width: 18%;
+  height: 50%;
+  top: 0%;
+  padding: 10px;
+  background-color: black;
+  overflow: hidden;
+  font-size: 30px;
+  text-overflow: clip;
+  font-weight: bold;
+  line-height: 45px;
+  color: white;
+}
+
+.time_block #week {
+  color: white;
+  font-size: 20px;
+}
+
+.time_block #week_ {
+  color: white;
+  font-size: 20px;
+}
+
+#cost {
+  display: none;
+  position: relative;
+  width: 18%;
+  top: -100%;
+  left: 19.5%;
+}
+
+.next {
+  background-color: red;
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  bottom: 8%;
+}
+
+.time_table {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  top: -50%;
+  left: 37%;
+  background-color: #e6e6e6;
+  padding: 20px;
+  display: none;
+  background-image: url("../img/timeboard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.date_selecter {
+  position: absolute;
+  top: 13%;
+  left: 40%;
+  width: 20%;
+  height: 25%;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hour_selecter {
+  position: absolute;
+  top: 48%;
+  left: 45%;
+  width: 16%;
+  height: 20%;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.minute_selecter {
+  position: absolute;
+  top: 72%;
+  left: 45%;
+  width: 10%;
+  height: 12%;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.block_selected {
+  background-color: #ffffff;
+}
+
+/*this is forth page config*/
+/*# sourceMappingURL=style.css.map */
