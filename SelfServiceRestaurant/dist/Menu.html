@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+	
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+	
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <link   rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+</head>
+
+<body style="height:100vh;width:100vw;overflow:hidden">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    
+<!--整體頁面-->
+<div id="Wrap">
+    <div class="sidebar">
+        <img src="./img/LOGO.png" id="LOGO">
+        <img src="./img/icon_member.png" class="icon" id="icon_member">
+        <img src="./img/icon_menu.png" class="icon" id="icon_menu">
+        <img src="./img/icon_map.png" class="icon" id="icon_map">
+    </div>
+
+    <!--可直接替換的html碼，範圍為右下大方格-->
+    <div id="wrapped_content">
+		
+		
+		<div class="mid_icon" id="visiter">
+			<img id="visiter_img" src="./img/工作區域 1.png" style="width:16vw; cursor: pointer;">
+		</div>
+		
+		<div class="mid_icon" id="memberlogin">
+			<img id="memberlogin_img" src="./img/工作區域 2.png" style="width:16vw; cursor: pointer;" onclick="signinshow()">
+		</div>
+		
+		<div class="mid_icon" id="registered">
+			<img id="registered_img" src="./img/工作區域 3.png" style="width:16vw; cursor: pointer;" onclick="signupshow()">
+		</div>
+
+		<div id="signin">
+			<img src="./img/工作區域 1 (2).png" id="signin_bg">
+			<form action="/signin" method="post">
+				<p id="signin_text">Sign in</p>
+				<button type="button" class="btn btn-secondary btn-lg button_step" id='signup1'>還不是會員？點此註冊</button>
+				<p id="mail_text">E-mail address</p>
+				<input id="mail_input" type="text" name="signin_mail" placeholder="Your Mail">
+				<p id="passward_text">Passward</p>
+				<input id="passward_input" type="password" name="signin_password" placeholder="Your Password">
+				<p id="forgetpassward_text">Forget passward?</p>
+				<!--<input type="submit" value="Sign in" class="btn btn-secondary btn-lg button_step" id='signinbotton'>-->
+				<button type="button" class="btn btn-secondary btn-lg button_step" id='signinbotton'>Sign in</button>
+				<button type="button" class="btn btn-secondary btn-lg button_step" id='fbbotton' onclick="fblogin()">使用facebook應用程式登入</button>
+			</form>
+		</div>
+
+		<div id="signup">
+			<img src="./img/工作區域 1 (2).png" id="signup_bg">
+			<form action="/signup" method="post">
+				<p id="signup_text">Sign up</p>
+				<button type="button" class="btn btn-secondary btn-lg button_step" id='signup2'>已經是會員？點此登入</button>
+				<p id="name_text_up">Username</p>
+				<input id="name_input_up" type="text" name="signup_name" placeholder="Your Name">  
+				<p id="mail_text_up">E-mail address</p>
+				<input id="mail_input_up" type="text" name="signup_mail" placeholder="Your Mail">
+				<p id="passward_text_up">Passward</p>
+				<input id="passward_input_up" type="password" name="signup_password" placeholder="Your Password">	
+				<!--<input type="submit" value="Sign up" class="btn btn-secondary btn-lg button_step" id='signupbotton'>-->
+				<button type="button" class="btn btn-secondary btn-lg button_step" id='signupbotton'>Sign up</button>
+				<button type="button" class="btn btn-secondary btn-lg button_step" id='fbbotton_up' onclick="fbregister()">使用facebook應用程式登入</button>
+			</form>
+		</div>
+		
+		
+        <div id="menu_region" class="menu_region" style="display:none;">
+            <div class="order_1"> 
+                <div class="img_set">
+                    <img src="./img/Burger1.png" id="burger_1">
+                    <img src="./img/icon_add_to_cart.png" id="add_1">
+                    <img src="./img/icon_add_to_cart_hover.png" id="add_1_button">
+                    <p id="rate_1"></p>
+                </div>
+            </div>
+            <div class="order_2"> 
+                <div class="img_set">
+                    <img src="./img/Burger2.png" id="burger_2">
+                    <img src="./img/icon_add_to_cart.png" id="add_2">
+                    <img src="./img/icon_add_to_cart_hover.png" id="add_2_button">
+                    <p id="rate_2"></p>
+                </div>
+            </div>
+            <div class="order_3"> 
+                <div class="img_set">
+                    <img src="./img/Burger3.png" id="burger_3">
+                    <img src="./img/icon_add_to_cart.png" id="add_3">
+                    <img src="./img/icon_add_to_cart_hover.png" id="add_3_button">
+                    <p id="rate_3"></p>
+                </div>
+            </div>
+            <div class="order_4"> 
+                <div class="img_set">
+                    <img src="./img/Burger4.png" id="burger_4">
+                    <img src="./img/icon_add_to_cart.png" id="add_4">
+                    <img src="./img/icon_add_to_cart_hover.png" id="add_4_button">
+                    <p id="rate_4"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="cart_region" class="cart_region" style="display:none;">
+            <img src="./img/ordered_list.png" class="shopping_cart_bg">
+            <div class="container">
+                <div id="shopping_cart">
+                </div>
+            </div>
+            
+            <p id="total_cost">0</p>
+            <img src="./img/comfirm_and_pay.png" id="comfirm_and_pay_img">
+            <img src="./img/comfirm_and_pay_hover.png" id="comfirm_and_pay_btn" onclick="topay()">
+        </div>
+		
+		<div class="left" style="display:none;">
+			<div id="head">
+				<img src="" id="headphoto">
+			</div>
+			
+			<div class="per_icon" id="shop">
+				<img src="./img/工作區域 2 (2).png" style="width:100%;">
+				<div class="text">購買紀錄</div>
+			</div>
+			<div class="per_icon" id="coupon">
+				<img src="./img/工作區域 3 (1).png" style="width:100%;">
+				<div class="text">折價卷</div>
+			</div>
+			<div class="per_icon" id="info">
+				<img src="./img/工作區域 4 (2).png" style="width:100%;">
+				<div class="text">通知</div>
+			</div>
+			<div class="per_icon" id="el_wallet">
+				<img src="./img/工作區域 5 (2).png" style="width:100%;">
+				<div class="text">我的錢包</div>
+			</div>
+			<div class="per_icon" id="comment">
+				<img src="./img/工作區域 6 (2).png" style="width:100%;">
+				<div class="text">評論</div>
+			</div>
+			<div class="per_icon" id="setting">
+			   <img src="./img/工作區域 7 (2).png" style="width:100%;">
+				<div class="text"> 個人設定</div>
+			</div>
+		</div>
+
+		<div class="right" style="display:none;">
+			<div id="personal">
+				<div class="hello">HELLO,</div>
+				<div class="name">Name</div>
+				<button type="button" class="btn btn-secondary btn-lg " id='gogo_order'>點餐去!</button>
+			</div>
+			<div id="personalbox">
+				<p>Coming soon.</p>
+			</div>
+		</div>
+
+
+		<div class="mid_region" style="display:none;">
+            <div class="step1">
+                <button type="button" class="btn btn-secondary btn-lg button_step red" id='step1_btn'>STEP1</button>
+                <br><br>
+		        <b id="chtext1" style="font-size:34px;color: azure;font-family: Microsoft JhengHei;">選擇取餐門市</b>
+                <button type="button" class="btn btn-secondary btn-lg button_step opacity" id="chtext2" style="display:none;font-family: Microsoft JhengHei;">重新選擇取餐門市</button>
+                <br><br>
+                <div id="choosebotton"><img src="./img/工作區域 40.png" onclick="myFunctionchoose()" style="cursor:pointer; width:95%;"></div>
+                <div id="mapbox"></div>
+                <div id="mapboximg" width="156%" height="90%" style="width:78%;height:45%;"><img id="mapboximgin" src="" style="border-radius: 20px;"></div>
+                <div id="storeinfo1"></div>
+                <div id="storeinfo2"></div>
+            </div>
+            <div class="step2">
+                <button type="button" class="btn btn-secondary btn-lg button_step" id='step2_btn'>STEP2</button>
+                <br><br>
+                <b id="getimetext" style="font-size:34px;color: azure;font-family: Microsoft JhengHei;">選擇取餐時間</b>
+                <br><br>
+                <button type="button" class="btn btn-secondary btn-lg button_step" id='timedefault' style="font-family: Microsoft JhengHei;">系統預定</button>
+                <button type="button" class="btn btn-secondary btn-lg button_step opacity" id='self_defind' style="font-family: Microsoft JhengHei;">自行設定</button>
+                <br><br>
+                <div class="time_block" id='defa'>
+                    <p id="week">TUE</p>
+                    <span id="month">MAY</span><span id="dot1">,</span>
+                    <span id="day">15</span>
+                    <br>
+                    <span id="hour">11</span><span id="dot2">:</span>
+                    <span id="minute">50</span>
+                    <button type="button" class="btn btn-secondary btn-lg button_step next" id='next1'>NEXT</button>
+                </div>
+
+                <div class="time_table">
+                    <p style='position:absolute;font-weight: 1000;font-size: 15px'>日期</p>
+                    <p style='position:absolute;font-weight: 1000;font-size: 15px;top:47%'>時間</p>
+                    <p style='position:absolute;font-weight: 1000;font-size: 15px;top:57%;left:12%'>時</p>
+                    <p style='position:absolute;font-weight: 1000;font-size: 15px;top:75%;left:12%'>分</p>
+                    <div class="date_selecter block_selected" id='tod' style="left:20%">15</div>
+                    <div class="date_selecter" id='tom'>16</div>
+                    <div class="date_selecter"id='dat' style="left:60%">17</div>
+
+                    <div class="hour_selecter" style='left:28%'id='hour11'>11</div>
+                    <div class="hour_selecter block_selected" id='hour12'>12</div>
+                    <div class="hour_selecter "style="left:62%" id='hour13'>13</div>
+
+                    <div class="minute_selecter "style="left:20%" id='minute00'>00</div>
+                    <div class="minute_selecter "style="left:33%" id='minute10'>10</div>
+                    <div class="minute_selecter block_selected"style="left:46%" id='minute20'>20</div>
+                    <div class="minute_selecter "style="left:59%" id='minute30'>30</div>
+                    <div class="minute_selecter "style="left:72%" id='minute40'>40</div>
+                    <div class="minute_selecter "style="left:85%" id='minute50'>50</div>              
+                </div>
+                <div class="time_block" id='cost'>
+                    <p id="week_">TUE</p>
+                    <span id="month_">MAY</span><span>,</span>
+                    <span id="day_">21</span>
+                    <br>
+                    <span id="hour_">11</span><span>:</span>
+                    <span id="minute_">50</span>
+                    <button type="button" class="btn btn-secondary btn-lg button_step next" id='next2'>NEXT</button>
+                </div>
+
+             
+            </div>
+            <div class="step3">
+                <button type="button" class="btn btn-secondary btn-lg button_step" id='step3_btn'>STEP3</button>
+                <br><br>
+                <b id="paytext" style="font-size:34px;color: azure;font-family: Microsoft JhengHei;">選擇付費方式</b>
+                <br><br>
+                <div class="payBlock">
+                    <img class='opacity' src="./img/linepay.png" id='line'>
+                    <img class='opacity' src="./img/card.png" id="card">
+                    <img class='opacity' src="./img/mywallet.png" id="wallet">
+                    <img class='opacity' src="./img/yoyo.png" id="yoyo">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id='confirm_red'>CONFIRM AND PAY</button>
+
+
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+                  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3-fExgqiJV_3JHHWNlxHDzT_dS-dtl24&callback=initMap">
+                          </script>
+        </div> 
+		
+		<div id="finish_order" style="display:none;">
+            <img src="./img/Finish_order_bg.png" id="finish_order_bg">
+            <div class="time">
+                <div class="please">請於</div>
+                <div id="TIME"></div>
+            </div>
+            <div class="place">
+                <div class="goto">至</div>
+                <div id="PLACE"></div>
+            </div>
+            <div class="customer_number">
+                <div id="CUSTOMER_NUMBER">9號櫃</div>
+                <div class="take">取餐</div>
+            </div>
+            <div class="password_text">取餐密碼</div>
+            <div id="password_number"></div>
+        </div>
+
+    </div>
+</div>
+
+<div id="cover"></div>
+
+<!--客製化頁面-->
+<div id="Custom_page">
+    <div class="content">
+        <p class="burger_name">漢堡名</p>
+        <img src="./img/custom.png" class="background">
+        <div class="detail">
+             <div class="set_choose">
+                <img src="./img/default.png" id="default">
+                <img src="img/history.png" id="history">
+            </div>
+            <div class="burger_pic">
+                <img src="./img/top_pic.png" class="pic">
+                <img src="./img/cheese_pic.png" id="cheese_pic" class="pic">
+                <img src="./img/tomato_pic.png" id="tomato_pic" class="pic">
+                <img src="./img/cucumber_pic.png" id="cucumber_pic" class="pic">
+                <img src="./img/meat_pic.png" id="meat_pic" class="pic">
+                <img src="./img/lettuce_pic.png" id="lettuce_pic" class="pic">
+                <img src="./img/bottom_pic.png" class="pic">
+            </div>
+            <div class="buger_op">
+                <img src="./img/cheese_op.png" id="cheese_op" class="tag">
+                <img src="./img/tomato_op.png" id="tomato_op" class="tag">
+                <img src="./img/cucumber_op.png" id="cucumber_op" class="tag">
+                <img src="./img/salmon_op.png" id="meat_op" class="tag">
+                <img src="./img/lettuce_op.png" id="lettuce_op" class="tag">
+            </div>
+            <div class="sauce_op">
+                <img src="./img/spicy_sauce.png" id="spicy_sauce" class="tag">
+                <img src="./img/wasabi_sauce.png" id="wasabi_sauce" class="tag">
+                <img src="./img/peanut_sauce.png" id="peanut_sauce" class="tag">
+                <img src="./img/no_sauce.png" id="no_sauce" class="tag">
+            </div>
+            <img src="./img/cancel.png" id="cancel">
+            <img src="./img/add_to_cart.png" id="add_to_cart">
+            <img src="./img/add.png" id="add">
+            <img src="./img/minus.png" id="minus">
+            <p id="amount"><b>1</b></p>
+        </div>
+
+    </div>
+</div>
+
+<!--地圖-->
+<div id="Map">
+    <img src="img/MAP.png" class="Map_img">
+</div>
+
+<!--MENU-->
+<div id="Menu">
+        <img src="img/MENU.png" class="Menu_img">
+</div>
+    
+</body>
+<script type="text/javascript" language="JavaScript" src="./script/map.js" charset="big5"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./script/min.js"></script>
+	<script src="./script/index0.js"></script>
+	<script src="./script/order.js"></script>
+
+
+    <!--為了用modal加的，出問題優先刪除-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</html>

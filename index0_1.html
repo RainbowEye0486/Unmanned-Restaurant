@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>unmmand retaurant</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+    <!--為了MODEL加的，出問題優先刪除，提到上面讓下面覆寫-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!---->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+</head>
+
+<body style="height:100vh;width:100vw;">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <div class="wrap">
+        <div id="top_regin"></div>
+
+
+        <div class="sidebar_region">
+            <div id="logo"></div>
+            <div class="side_icon" id='menber'></div>
+
+            <div class="side_icon" id='menu'></div>
+
+            <div class="side_icon" id='map'></div>
+        </div>
+
+        <div class="mid_region">
+
+            <div class="left">
+                <div id="head"></div>
+
+                <div class="per_icon" id="shop">
+                    <img src="./img/工作區域 2 (2).png" style="width:100%;">
+                    <div class="text">購買紀錄</div>
+                </div>
+                <div class="per_icon" id="coupon">
+                    <img src="./img/工作區域 3 (1).png" style="width:100%;">
+                    <div class="text">折價卷</div>
+                </div>
+                <div class="per_icon" id="info">
+                    <img src="./img/工作區域 4 (2).png" style="width:100%;">
+                    <div class="text">通知</div>
+                </div>
+                <div class="per_icon" id="el_wallet">
+                    <img src="./img/工作區域 5 (2).png" style="width:100%;">
+                    <div class="text">我的錢包</div>
+                </div>
+                <div class="per_icon" id="comment">
+                    <img src="./img/工作區域 6 (2).png" style="width:100%;">
+                    <div class="text">評論</div>
+                </div>
+                <div class="per_icon" id="setting">
+                    <img src="./img/工作區域 7 (2).png" style="width:100%;">
+                    <div class="text"> 個人設定</div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div id="personal">
+                    <div class="hello">HELLO,</div>
+                    <div class="name">Name</div>
+                    <button type="button" class="btn btn-secondary btn-lg " id='gogo_order'>點餐去!</button>
+                </div>
+                <div id="personalbox">
+                    <!-- <p>Coming soon.</p>-->
+                    <div class="shop_block person_block">
+                        <p class='personal_font'>尚未有未處理訂單</p>
+
+                    </div>
+                    <div class="coupon_block person_block">
+                        <div class="coupon_each"></div>
+                        <div class="coupon_each"></div>
+                    </div>
+                    <div class="info_block person_block">
+                        <div class="info_inner">
+                            <div class="info">
+                                <div class="mail_pic"></div>
+                                <p id="send_time">20190503</p>
+                                <p id="send_name">黑膠漢堡</p>
+                                <p id="send_topic">已完成訂單</p>
+                            </div>
+                            <div class="info">
+                                <div class="mail_pic"></div>
+                                <p id="send_time">20190503</p>
+                                <p id="send_name">黑膠漢堡</p>
+                                <p id="send_topic">已完成訂單</p>
+                            </div>
+                            <div class="info">
+                                <div class="mail_pic"></div>
+                                <p id="send_time">20190503</p>
+                                <p id="send_name">黑膠漢堡</p>
+                                <p id="send_topic">已完成訂單</p>
+                            </div>
+                            <div class="info">
+                                <div class="mail_pic"></div>
+                                <p id="send_time">20190503</p>
+                                <p id="send_name">黑膠漢堡</p>
+                                <p id="send_topic">已完成訂單</p>
+                            </div>
+                            <div class="info">
+                                <div class="mail_pic"></div>
+                                <p id="send_time">20190503</p>
+                                <p id="send_name">黑膠漢堡</p>
+                                <p id="send_topic">已完成訂單</p>
+                            </div>
+                            <div class="info">
+                                <div class="mail_pic"></div>
+                                <p id="send_time">20190503</p>
+                                <p id="send_name">黑膠漢堡</p>
+                                <p id="send_topic">已完成訂單</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el_block person_block">
+                        <div class="remain_block">
+                            <p class="price_p" id='remain_text'>$680</p>
+                            <button type="button" class="btn btn-secondary btn-lg check_btn"
+                                id='remain_btn'>查詢明細</button>
+                        </div>
+                        <div class="bonus_block">
+                            <p class="price_p" id='bonus_text'>$15</p>
+                            <button type="button" class="btn btn-secondary btn-lg check_btn"
+                                id='bonus_btn'>查詢明細</button>
+                        </div>
+                        <div class="accumulate_block">
+                            <p class="price_p" id='accumulate_text'>$340</p>
+                            <button type="button" class="btn btn-secondary btn-lg check_btn"
+                                id='accumulate_btn'>查看會員獨享優惠</button>
+                        </div>
+                    </div>
+                    <div class="comment_block person_block">
+                        <p class='personal_font'>尚未開放!請耐心等候!</p>
+                    </div>
+                    <div class="setting_block person_block">
+                        <p></p>
+                        <div class="leftside">
+                            <b class="menberdata" style="margin-left: 25%;">Edit Accout 修改會員資料</b>
+                            <p style="top:10%;">會員帳號</p>
+                            <p style="top:15%;" id="account">scrachburger@gmail.com</p>
+                            <div class="form-group email_set">
+                                <label for="email" style='top:33%;'>會員名稱:</label>
+                                <input type="email" class="form-control" id="email" style='top:40%;'>
+                            </div>
+                            <div class="form-group email_set">
+                                <label for="birth" style='top:53%;'>出生日期:</label>
+                                <input type="birth" class="form-control" id="birth" style='top:60%;'>
+                            </div>
+                            <div class="form-group email_set">
+                                <label for="phone" style='top:73%;'>行動電話:</label>
+                                <input type="phone" class="form-control" id="phone" style='top:80%;'>
+                            </div>
+                            <button type="button" class="btn btn-secondary btn-lg setting_btn" id='cancel-left'
+                                style='bottom:-10%;right:30%;'>取消</button>
+                            <button type="button" class="btn btn-secondary btn-lg setting_btn" id='confirm-left'
+                                style='bottom:-10%;right:10%;'>確認修改</button>
+                        </div>
+                        <div class="for_border"></div>
+                        <div class="rightside">
+                            <b class="change_password" style="margin-left: 25%;">Change Password 修改密碼</b>
+                            <div class="form-group email_set">
+                                <label for="old_password" style='top:13%;'>請輸入舊密碼:</label>
+                                <input type="old_password" class="form-control" id="old_password" style='top:20%;'>
+                            </div>
+                            <div class="form-group email_set">
+                                <label for="new_password" style='top:33%;'>請輸入新密碼:</label>
+                                <input type="new_password" class="form-control" id="check1" style='top:40%;'>
+                            </div>
+                            <div class="form-group email_set">
+                                <label for="check" style='top:53%;'>新密碼再確認:</label>
+                                <input type="check" class="form-control" id="check2" style='top:60%;'>
+                            </div>
+                            <button type="button" class="btn btn-secondary btn-lg setting_btn" id='cancel-right'
+                                style='bottom:10%;right:30%;'>取消</button>
+                            <button type="button" class="btn btn-secondary btn-lg setting_btn" id='confirm-right'
+                                style='bottom:10%;right:10%;'>確認修改</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./script/min.js"></script>
+
+    <!--為了用modal加的，出問題優先刪除-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--------------------------------->
+
+</body>
+
+</html>
