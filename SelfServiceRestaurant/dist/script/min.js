@@ -1037,7 +1037,7 @@ $('#next1').on('click', function () {
     $('.step3').addClass('animated fadeInRight 0.5s')
     $('.step3').show()
 	if (now.name==="visitor") {
-		document.getElementById("line").style.display="none";
+		document.getElementById("wallet").style.display="none";
 	}
     document.getElementById('getimetext').innerHTML = '取餐時間' ;
 })
@@ -1055,7 +1055,7 @@ $('#next2').on('click', function () {
     $('.step3').addClass('animated fadeInRight 0.5s')
     $('.step3').show()
 	if (now.name==="visitor") {
-		document.getElementById("line").style.display="none";
+		document.getElementById("wallet").style.display="none";
 	}
     document.getElementById('getimetext').innerHTML = '取餐時間' ;
 

@@ -10,7 +10,7 @@
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js"
         integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 	
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 
     <link   rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -55,9 +55,9 @@
 				<p id="signin_text">Sign in</p>
 				<button type="button" class="btn btn-secondary btn-lg button_step" id='signup1'>還不是會員？點此註冊</button>
 				<p id="mail_text">E-mail address</p>
-				<input id="mail_input" type="text" name="signin_mail" placeholder="Your Mail">
+				<input id="mail_input" name="signin_mail" placeholder="Your Mail" type="email" required>
 				<p id="passward_text">Passward</p>
-				<input id="passward_input" type="password" name="signin_password" placeholder="Your Password">
+				<input id="passward_input" type="password" name="signin_password" placeholder="Your Password" pattern="(?=^[A-Za-z0-9]{6,15}$)((?=.*[A-Za-z])(?=.*[0-9]))^.*$" required>
 				<p id="forgetpassward_text">Forget passward?</p>
 				<!--<input type="submit" value="Sign in" class="btn btn-secondary btn-lg button_step" id='signinbotton'>-->
 				<button type="button" class="btn btn-secondary btn-lg button_step" id='signinbotton'>Sign in</button>
@@ -71,11 +71,11 @@
 				<p id="signup_text">Sign up</p>
 				<button type="button" class="btn btn-secondary btn-lg button_step" id='signup2'>已經是會員？點此登入</button>
 				<p id="name_text_up">Username</p>
-				<input id="name_input_up" type="text" name="signup_name" placeholder="Your Name">  
+				<input id="name_input_up" type="text" name="signup_name" placeholder="6~15位字元" maxlength="15" minlength="6" required>  
 				<p id="mail_text_up">E-mail address</p>
-				<input id="mail_input_up" type="text" name="signup_mail" placeholder="Your Mail">
+				<input id="mail_input_up" name="signup_mail" placeholder="Your Mail" type="email" required>
 				<p id="passward_text_up">Passward</p>
-				<input id="passward_input_up" type="password" name="signup_password" placeholder="Your Password">	
+				<input id="passward_input_up" type="password" name="signup_password" placeholder="長度6~15之英數字組合" pattern="(?=^[A-Za-z0-9]{6,15}$)((?=.*[A-Za-z])(?=.*[0-9]))^.*$" required>	
 				<!--<input type="submit" value="Sign up" class="btn btn-secondary btn-lg button_step" id='signupbotton'>-->
 				<button type="button" class="btn btn-secondary btn-lg button_step" id='signupbotton'>Sign up</button>
 				<button type="button" class="btn btn-secondary btn-lg button_step" id='fbbotton_up' onclick="fbregister()">使用facebook應用程式登入</button>
@@ -334,10 +334,10 @@
 </body>
 <script type="text/javascript" language="JavaScript" src="./script/map.js" charset="big5"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

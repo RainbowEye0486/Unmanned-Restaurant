@@ -155,6 +155,9 @@ $('#confirm_red').on('click', function () {
 	console.log(datetime)
 	console.log(password_number)	
 	$.post('/order', {"id":now.id, "name":now.name, "item":order, "number":n, "place":place, "time":datetime, "howtopay":howtopay, "amount":price, "password_number":password_number});
+	if (howtopay==="line") {
+		window.open("/pay/reserve", "newwindow", "fullscreen=yes, status=no, toolbar=no, menubar=no, location=no")
+	}
 	document.getElementById("TIME").innerHTML=datetime;
 	document.getElementById("PLACE").innerHTML=place;
 	document.getElementById("password_number").innerHTML=password_number;

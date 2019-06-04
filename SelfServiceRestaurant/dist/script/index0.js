@@ -3,33 +3,38 @@
 
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
-    FB.api('/me', function(response) {
-      $.post('/fbget', response, (data)=> {
-        if (typeof(data[0])!="undefined") {
-          if (click==="fblogin") {
-			testAPI();
-            //setTimeout(testAPI, 5000);
+    if (response.status==="connected") {
+	  FB.api('/me', function(response) {      
+        $.post('/fbget', response, (data)=> {
+          if (typeof(data[0])!="undefined") {
+            if (click==="fblogin") {
+			        testAPI();
+              //setTimeout(testAPI, 5000);
+            }
+            else {             
+		          FB.logout(function(response) {
+				        console.log(response);
+			        });
+              alert("此Facebook帳號已註冊");
+            }
           }
-          else {             
-		    FB.logout(function(response) {
-				console.log(response);
-			});
-            alert("此Facebook帳號已註冊");
+          else {          
+            if (click==="fblogin") {
+			        FB.logout(function(response) {
+				        console.log(response);
+			        });
+			        alert("此Facebook帳號尚未註冊");
+            }
+            else {
+              testAPI();
+            }
           }
-        }
-        else {          
-          if (click==="fblogin") {
-			FB.logout(function(response) {
-				console.log(response);
-			});
-			alert("此Facebook帳號尚未註冊");
-          }
-          else {
-            testAPI();
-          }
-        }
-      });
-    });
+        });
+      })
+	}
+	else {
+      alert("Please login Facebook to continue.");
+    }    
   });
 }
 
@@ -124,17 +129,20 @@ $('#signinbotton').on('click',function(){
 })
 
 $('#signupbotton').on('click',function(){
-	if ($("input[name=signup_name]").val()==="") {
-		alert("尚未填寫Username");
-		eval("document.getElementById('name_input_up').focus()");       
+	var nameup = document.getElementById('name_input_up');
+	var mailup = document.getElementById('mail_input_up');
+	var passward_up = document.getElementById('passward_input_up');
+	if (!nameup.validity.valid) {
+		alert("Username有誤");
+		eval("document.getElementById('name_input_up').focus()");
 	}
-	else if ($("input[name=signup_mail]").val()==="") {
-		alert("尚未填寫E-mail");
-		eval("document.getElementById('mail_input_up').focus()");    
+	else if (!mailup.validity.valid) {
+		alert("E-mail有誤");
+		eval("document.getElementById('mail_input_up').focus()"); 
 	}
-	else if ($("input[name=signup_password]").val()==="") {
-		alert("尚未填寫Password");
-		eval("document.getElementById('passward_input_up').focus()");
+	else if (!passward_up.validity.valid) {
+		alert("Password有誤");
+		eval("document.getElementById('passward_input_up').focus()"); 
 	}
 	else {
 		$.post('/signup', {name:$("input[name=signup_name]").val(), email:$("input[name=signup_mail]").val(), 

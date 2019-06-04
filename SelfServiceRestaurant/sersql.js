@@ -10,6 +10,50 @@ const mysql = require('mysql')
 const connection = mysql.createConnection(config.mysql)
 const bodyParser = require('body-parser')
 
+app.use(express.static(`${__dirname}/dist`))
+
+const line = require("line-pay-sdk");
+const uuid = require("uuid/v4")
+const dotenv = require("dotenv");
+
+dotenv.config();
+
+const client = new line.Client({
+  channelId: process.env.LINE_PAY_CHANNEL_ID,
+  channelSecret: process.env.LINE_PAY_CHANNEL_SECRET,
+});
+var line_amount=1
+app.use("/pay/reserve", (req, res) => {
+  const options = {
+    productName: "ScratchBurger",
+	productImageUrl: "https://luffy.ee.ncku.edu.tw:11500/img/LOGO.png",
+    amount: line_amount,
+    currency: "TWD",
+    orderId: uuid(),
+    confirmUrl: "https://luffy.ee.ncku.edu.tw:11500/pay/confirm"
+  }
+
+  client.reservePayment(options).then((response) => {
+    res.redirect(response.info.paymentUrl.web);
+  });
+});
+
+app.use("/pay/confirm", (req, res) => {
+  if (!req.query.transactionId){
+    throw new Error("Transaction Id not found.");
+  }
+  const confirmation = {
+    transactionId: req.query.transactionId,
+    amount: line_amount,
+    currency: "TWD"
+  };
+
+  client.confirmPayment(confirmation).then((response) => {
+    res.send("<h1>Payment has been completed.</h1> <button onclick='window.close()'>Quit</button>");
+  });
+});
+
+
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
@@ -88,6 +132,9 @@ app.post('/selfownget', function(req, res) {
 var order_index=0;
 app.post('/order', function(req, res) {
   order_index=order_index+1 
+  if (req.body.howtopay==="line") {
+	  line_amount=req.body.amount;
+  }
 	if (req.body.id==="selfown") {
 		connection.query(`INSERT INTO OrderX (order_index, username, item1, n1, item2, n2, item3, n3, item4, n4, item5, n5, place, time, howtopay, amount, password_number) VALUES ("${order_index}", "${req.body.name}", 
 			"${req.body["item[]"][0]}", ${req.body["number[]"][0]}, "${req.body["item[]"][1]}", ${req.body["number[]"][1]}, "${req.body["item[]"][2]}", ${req.body["number[]"][2]},
