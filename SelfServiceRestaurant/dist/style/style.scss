@@ -1,0 +1,706 @@
+//variable
+$sidebar_w: 15%;
+$icon_h: 10%;
+
+body{
+    background-color: #333333;
+}
+
+//Menu
+#Wrap{
+    height: 100%;
+    width: 100%;
+
+    .sidebar{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: $sidebar_w;
+        height: 100%;
+
+        #LOGO{
+            position: absolute;
+            top: 5%;
+            left: 13%;
+            height: 16%;
+        }
+
+        .icon{
+            position: absolute;
+            left: 13%;
+            height: $icon_h;
+        }
+
+        .icon:hover{
+            transform: translate(-1px, -1px);
+        }
+
+        #icon_member{
+            position: absolute;
+            top: 27%;
+        }
+
+        #icon_menu{
+            position: absolute;
+            top: 40%;
+        }
+
+        #icon_map{
+            position: absolute;
+            top: 53%;
+        }
+        
+    }
+
+    #wrapped_content{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 85%;
+        height: 85%;
+
+        .menu_region{
+            position: absolute;
+            left: 5%;
+            height: 95%;
+            width: 55%;
+
+            .order_1{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 50%;
+
+                .img_set{
+
+                    position: absolute;
+                    left: 0;
+                    width: 75%;
+
+                    #burger_1{
+                        width: 90%;
+                    }
+    
+                    #add_1{
+                        position: absolute;
+                        top: 40%;
+                        left: 80%;
+                        width: 20%;
+                    }
+
+                    #add_1_button{
+                        position: absolute;
+                        top: 40%;
+                        left: 80%;
+                        width: 20%;
+                        opacity: 0;
+                    }
+
+                    #add_1_button:hover{
+                        opacity: 1;
+                    }
+                }
+
+                #rate_1{
+                    color: yellow;
+                    position: absolute;
+                    left: 2%;
+                    top: 2%;
+                }
+            }
+
+            .order_2{
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 50%;
+                height: 50%;
+
+                .img_set{
+
+                    position: absolute;
+                    left: 0;
+                    width: 75%;
+
+                    #burger_2{
+                        width: 90%;
+                    }
+    
+                    #add_2{
+                        position: absolute;
+                        top: 40%;
+                        left: 80%;
+                        width: 20%;
+                    }
+
+                    #add_2_button{
+                        position: absolute;
+                        top: 40%;
+                        left: 80%;
+                        width: 20%;
+                        opacity: 0;
+                    }
+
+                    #add_2_button:hover{
+                        opacity: 1;
+                    }
+                }
+
+                #rate_2{
+                    color: yellow;
+                    position: absolute;
+                    left: 2%;
+                    top: 2%;
+                }
+            }
+
+            .order_3{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 50%;
+                height: 50%;
+
+                .img_set{
+
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 75%;
+
+                    #burger_3{
+                        width: 90%;
+                    }
+    
+                    #add_3{
+                        position: absolute;
+                        top: 40%;
+                        left: 80%;
+                        width: 20%;
+                    }
+
+                    #add_3_button{
+                        position: absolute;
+                        top: 40%;
+                        left: 80%;
+                        width: 20%;
+                        opacity: 0;
+                    }
+
+                    #add_3_button:hover{
+                        opacity: 1;
+                    }
+                }
+
+                #rate_3{
+                    color: yellow;
+                    position: absolute;
+                    left: 2%;
+                    top: 2%;
+                }
+            }
+
+            .order_4{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 50%;
+                height: 50%;
+
+                .img_set{
+
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 75%;
+
+                    #burger_4{
+                        width: 90%;
+                    }
+    
+                    #add_4{
+                        position: absolute;
+                        top: 40%;
+                        left: 80%;
+                        width: 20%;
+                    }
+
+                    #add_4_button{
+                        position: absolute;
+                        top: 40%;
+                        left: 80%;
+                        width: 20%;
+                        opacity: 0;
+                    }
+
+                    #add_4_button:hover{
+                        opacity: 1;
+                    }
+                }
+
+                #rate_4{
+                    color: yellow;
+                    position: absolute;
+                    left: 2%;
+                    top: 2%;
+                }
+            }
+        }
+
+        .cart_region{
+            position: absolute;
+            left: 62%;
+            height: 95%;
+
+            .shopping_cart_bg{
+                height: 100%;
+            }
+
+            .container{
+                position: absolute;
+                top: 28%;
+                left: 0;
+                height: 48%;
+                width: 100%;
+                overflow: hidden;
+            }
+            #shopping_cart{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 112.5%;
+                height: 106.5%;
+                overflow: scroll;
+            }
+
+            #total_cost{
+                position: absolute;
+                bottom: 14%;
+                right: 25%;
+                font-size: 3rem;
+                color: black;
+                height: 5%;
+                width: 10%;
+                font-weight: bold;
+            }
+
+            #comfirm_and_pay_img{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            #comfirm_and_pay_btn{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                opacity: 0;
+            }
+
+            #comfirm_and_pay_btn:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.order_list{
+    position: relative;
+    width: 75%;
+    height: 25%;
+    background-color: azure;
+    margin-top: 3%;
+    margin-left: 5%;
+    border-radius:3px;
+    box-shadow: 5px #304753;
+
+    .container_for_click{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    .order_name{
+        font-family: Microsoft JhengHei;
+        font-weight: bold;
+        font-size: 20px;
+        position: absolute;
+        left: 10px;
+        top: 0px;
+    }
+    .no_ingredient{
+        font-family: Microsoft JhengHei;
+        font-size: 14px;
+        bottom: 19px;
+        position: absolute;
+        left: 10px;
+        margin: 0%;
+        opacity: 0.7;
+    }
+    .sauce{
+        font-family: Microsoft JhengHei;
+        font-size: 14px;
+        bottom: 0%;
+        position: absolute;
+        left: 10px;
+        bottom: 2px;
+        margin: 0%;
+        opacity: 0.7;
+    }
+    
+    .single_price{
+        position: absolute;
+        font-size: 20px;
+        top: 7%;
+        right: 4%;
+    }
+    
+    .delete_img{
+        position: absolute;
+        width: 10%;
+        top: 32%;
+        right: -12.5%;
+    }
+
+    .delete_btn{
+        position: absolute;
+        width: 10%;
+        top: 32%;
+        right: -12.5%;
+        opacity: 0;
+    }
+    .delete_btn:hover{
+        opacity: 1;
+    }
+
+    .add_img{
+        position: absolute;
+        width: 8%;
+        top: 14%;
+        right: 19.5%;
+    }
+    
+    .add_btn{
+        position: absolute;
+        width: 8%;
+        top: 14%;
+        right: 19.5%;
+        opacity: 0;
+    }
+
+    .add_btn:hover{
+        opacity: 1;
+    }
+    
+    .minus_img{
+        position: absolute;
+        width: 8%;
+        top: 14%;
+        right: 37.5%;
+    }
+
+    .minus_btn{
+        position: absolute;
+        width: 8%;
+        top: 14%;
+        right: 37.5%;
+        opacity: 0;
+    }
+
+    .minus_btn:hover{
+        opacity: 1;
+    }
+
+    .order_amount{
+        position: absolute;
+        font-size: 20px;
+        top: 7%;
+        right: 31%;
+    }
+}
+
+//Customizing Page
+
+#Custom_page{
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+
+    .content{
+        position: absolute;
+        left: 50%;
+        top: 7.5%;
+        transform: translateX(-50%);
+        height: 85%;
+        width: auto;
+
+        .burger_name{
+            position: absolute;
+            top: 5.5%;
+            left: 8%;
+            font-family: Microsoft JhengHei;
+            font-size: 2.5rem;
+            height: 9%;
+            color: white;
+            font-weight: bold;
+        }
+
+        .background{
+            height: 100%;
+        }
+
+        .detail{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 98.5%;
+            height: 97.5%;
+            
+            .set_choose{
+                position: absolute;
+                top: 6.7%;
+                left: 46.5%;
+                height: 6%;
+                
+                #default{
+                    height: 100%;
+                }
+
+                #default:hover{
+                    transform: translate(-1px, -1px);
+                }
+
+                #history{
+                    position: relative;
+                    left: 1%;
+                    height: 100%;
+                    opacity: 0.6;
+                }
+
+                #history:hover{
+                    transform: translate(-1px, -1px);
+                }
+            }
+
+            .burger_pic{
+                position: absolute;
+                left: 7%;
+                top: 17%;
+                height: 76.5%;
+                width: 33%;
+    
+                .pic{
+                    width: 100%;
+                }
+                #cheese_pic{
+                    opacity: 1;
+                }
+                #tomato_pic{
+                    opacity: 1;
+                }
+                #cucumber_pic{
+                    opacity: 1;
+                }
+                #meat_pic{
+                    opacity: 1;
+                }
+                #lettuce_pic{
+                    opacity: 1;
+                }
+            }
+
+            .buger_op{
+                position: absolute;
+                left: 46%;
+                top: 39%;
+                height: 41%;
+                width: auto;
+    
+                .tag{
+                    height: 10.4%;
+                }
+
+                .tag:hover{
+                    transform: translate(-1px, -1px);
+                }
+
+                #cheese_op{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    opacity: 1;
+                }
+                #tomato_op{
+                    position: absolute;
+                    left: 0;
+                    top: 22.4%;
+                    opacity: 1;
+                }
+                #cucumber_op{
+                    position: absolute;
+                    left: 0;
+                    top: 44.8%;
+                    opacity: 1;
+                }
+                #meat_op{
+                    position: absolute;
+                    left: 0;
+                    top: 67.2%;
+                    opacity: 1;
+                }
+                #lettuce_op{
+                    position: absolute;
+                    left: 0;
+                    top: 89.6%;
+                    opacity: 1;
+                }
+            }
+            
+            .sauce_op{
+                position: absolute;
+                left: 69.5%;
+                top: 33.5%;
+                height: 13%;
+                width: 17%;
+    
+                .tag{
+                    height: 37.5%;
+                    width: auto;
+                }
+
+                .tag:hover{
+                    transform: translate(-1px, -1px);
+                }
+    
+                #spicy_sauce{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 1;
+                }
+    
+                #wasabi_sauce{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    opacity: 0.4;
+                }
+    
+                #peanut_sauce{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    opacity: 0.4;
+                }
+    
+                #no_sauce{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    opacity: 0.4;
+                }
+            }
+    
+            #cancel{
+                position: absolute;
+                left: 65%;
+                top: 84%;
+                height: 8%;
+            }
+
+            #cancel:hover{
+                transform: translate(-1px, -1px);
+            }
+    
+            #add_to_cart{
+                position: absolute;
+                left: 77%;
+                top: 84%;
+                height: 8%;
+            }
+
+            #add_to_cart:hover{
+                transform: translate(-1px, -1px);
+            }
+
+            #add{
+                position: absolute;
+                top: 69.5%;
+                left: 88%;
+                height: 3.5%;
+            }
+
+            #add:hover{
+                transform: translate(-1px, -1px);
+            }
+
+            #minus{
+                position: absolute;
+                top: 69.5%;
+                left: 72%;
+                height: 3.5%;
+            }
+
+            #minus:hover{
+                transform: translate(-1px, -1px);
+            }
+
+            #amount{
+                position: absolute;
+                top: 68.2%;
+                left: 80.5%;
+                font-size: 1.5rem;
+                color: white;
+            }
+        }  
+    }
+}
+
+//White background
+#cover{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: none;
+}
+
+//Sidebar items
+
+#Map{
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    
+    .Map_img{
+        position: absolute;
+        left: 25%;
+        top: 20%;
+        width: 50%;
+    }
+}
+
+#Menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    
+    .Menu_img{
+        position: absolute;
+        left: 15%;
+        top: 20%;
+        width: 70%;
+    }
+}

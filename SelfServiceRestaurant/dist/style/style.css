@@ -1,0 +1,1524 @@
+body {
+  background-color: #333333;
+}
+
+#Wrap {
+  height: 100%;
+  width: 100%;
+}
+
+#Wrap .sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15%;
+  height: 100%;
+}
+
+#Wrap .sidebar #LOGO {
+  position: absolute;
+  top: 5%;
+  left: 13%;
+  height: 16%;
+}
+
+#Wrap .sidebar .icon {
+  position: absolute;
+  left: 13%;
+  height: 10%;
+}
+
+#Wrap .sidebar .icon:hover {
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+}
+
+#Wrap .sidebar #icon_member {
+  position: absolute;
+  top: 27%;
+}
+
+#Wrap .sidebar #icon_menu {
+  position: absolute;
+  top: 40%;
+}
+
+#Wrap .sidebar #icon_map {
+  position: absolute;
+  top: 53%;
+}
+
+#Wrap #wrapped_content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 85%;
+  height: 85%;
+}
+
+#Wrap #wrapped_content .menu_region {
+  position: absolute;
+  left: 5%;
+  height: 95%;
+  width: 55%;
+}
+
+#Wrap #wrapped_content .menu_region .order_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+}
+
+#Wrap #wrapped_content .menu_region .order_1 .img_set {
+  position: absolute;
+  left: 0;
+  width: 75%;
+}
+
+#Wrap #wrapped_content .menu_region .order_1 .img_set #burger_1 {
+  width: 90%;
+}
+
+#Wrap #wrapped_content .menu_region .order_1 .img_set #add_1 {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  width: 20%;
+}
+
+#Wrap #wrapped_content .menu_region .order_1 .img_set #add_1_button {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  width: 20%;
+  opacity: 0;
+}
+
+#Wrap #wrapped_content .menu_region .order_1 .img_set #add_1_button:hover {
+  opacity: 1;
+}
+
+#Wrap #wrapped_content .menu_region .order_1 #rate_1 {
+  color: yellow;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+}
+
+#Wrap #wrapped_content .menu_region .order_2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+#Wrap #wrapped_content .menu_region .order_2 .img_set {
+  position: absolute;
+  left: 0;
+  width: 75%;
+}
+
+#Wrap #wrapped_content .menu_region .order_2 .img_set #burger_2 {
+  width: 90%;
+}
+
+#Wrap #wrapped_content .menu_region .order_2 .img_set #add_2 {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  width: 20%;
+}
+
+#Wrap #wrapped_content .menu_region .order_2 .img_set #add_2_button {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  width: 20%;
+  opacity: 0;
+}
+
+#Wrap #wrapped_content .menu_region .order_2 .img_set #add_2_button:hover {
+  opacity: 1;
+}
+
+#Wrap #wrapped_content .menu_region .order_2 #rate_2 {
+  color: yellow;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+}
+
+#Wrap #wrapped_content .menu_region .order_3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+}
+
+#Wrap #wrapped_content .menu_region .order_3 .img_set {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+}
+
+#Wrap #wrapped_content .menu_region .order_3 .img_set #burger_3 {
+  width: 90%;
+}
+
+#Wrap #wrapped_content .menu_region .order_3 .img_set #add_3 {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  width: 20%;
+}
+
+#Wrap #wrapped_content .menu_region .order_3 .img_set #add_3_button {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  width: 20%;
+  opacity: 0;
+}
+
+#Wrap #wrapped_content .menu_region .order_3 .img_set #add_3_button:hover {
+  opacity: 1;
+}
+
+#Wrap #wrapped_content .menu_region .order_3 #rate_3 {
+  color: yellow;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+}
+
+#Wrap #wrapped_content .menu_region .order_4 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+#Wrap #wrapped_content .menu_region .order_4 .img_set {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+}
+
+#Wrap #wrapped_content .menu_region .order_4 .img_set #burger_4 {
+  width: 90%;
+}
+
+#Wrap #wrapped_content .menu_region .order_4 .img_set #add_4 {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  width: 20%;
+}
+
+#Wrap #wrapped_content .menu_region .order_4 .img_set #add_4_button {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  width: 20%;
+  opacity: 0;
+}
+
+#Wrap #wrapped_content .menu_region .order_4 .img_set #add_4_button:hover {
+  opacity: 1;
+}
+
+#Wrap #wrapped_content .menu_region .order_4 #rate_4 {
+  color: yellow;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+}
+
+#Wrap #wrapped_content .cart_region {
+  position: absolute;
+  left: 62%;
+  height: 95%;
+}
+
+#Wrap #wrapped_content .cart_region .shopping_cart_bg {
+  height: 100%;
+}
+
+#Wrap #wrapped_content .cart_region .container {
+  position: absolute;
+  top: 28%;
+  left: 0;
+  height: 48%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#Wrap #wrapped_content .cart_region #shopping_cart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 112.5%;
+  height: 106.5%;
+  overflow: scroll;
+}
+
+#Wrap #wrapped_content .cart_region #total_cost {
+  position: absolute;
+  bottom: 14%;
+  right: 25%;
+  font-size: 3rem;
+  color: black;
+  height: 5%;
+  width: 10%;
+  font-weight: bold;
+}
+
+#Wrap #wrapped_content .cart_region #comfirm_and_pay_img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#Wrap #wrapped_content .cart_region #comfirm_and_pay_btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+#Wrap #wrapped_content .cart_region #comfirm_and_pay_btn:hover {
+  opacity: 1;
+}
+
+.order_list {
+  position: relative;
+  width: 75%;
+  height: 25%;
+  background-color: azure;
+  margin-top: 3%;
+  margin-left: 5%;
+  border-radius: 3px;
+  -webkit-box-shadow: 5px #304753;
+          box-shadow: 5px #304753;
+}
+
+.order_list .container_for_click {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.order_list .order_name {
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+
+.order_list .no_ingredient {
+  font-family: Microsoft JhengHei;
+  font-size: 14px;
+  bottom: 19px;
+  position: absolute;
+  left: 10px;
+  margin: 0%;
+  opacity: 0.7;
+}
+
+.order_list .sauce {
+  font-family: Microsoft JhengHei;
+  font-size: 14px;
+  bottom: 0%;
+  position: absolute;
+  left: 10px;
+  bottom: 2px;
+  margin: 0%;
+  opacity: 0.7;
+}
+
+.order_list .single_price {
+  position: absolute;
+  font-size: 20px;
+  top: 7%;
+  right: 4%;
+}
+
+.order_list .delete_img {
+  position: absolute;
+  width: 10%;
+  top: 32%;
+  right: -12.5%;
+}
+
+.order_list .delete_btn {
+  position: absolute;
+  width: 10%;
+  top: 32%;
+  right: -12.5%;
+  opacity: 0;
+}
+
+.order_list .delete_btn:hover {
+  opacity: 1;
+}
+
+.order_list .add_img {
+  position: absolute;
+  width: 8%;
+  top: 14%;
+  right: 19.5%;
+}
+
+.order_list .add_btn {
+  position: absolute;
+  width: 8%;
+  top: 14%;
+  right: 19.5%;
+  opacity: 0;
+}
+
+.order_list .add_btn:hover {
+  opacity: 1;
+}
+
+.order_list .minus_img {
+  position: absolute;
+  width: 8%;
+  top: 14%;
+  right: 37.5%;
+}
+
+.order_list .minus_btn {
+  position: absolute;
+  width: 8%;
+  top: 14%;
+  right: 37.5%;
+  opacity: 0;
+}
+
+.order_list .minus_btn:hover {
+  opacity: 1;
+}
+
+.order_list .order_amount {
+  position: absolute;
+  font-size: 20px;
+  top: 7%;
+  right: 31%;
+}
+
+#Custom_page {
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+}
+
+#Custom_page .content {
+  position: absolute;
+  left: 50%;
+  top: 7.5%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 85%;
+  width: auto;
+}
+
+#Custom_page .content .burger_name {
+  position: absolute;
+  top: 5.5%;
+  left: 8%;
+  font-family: Microsoft JhengHei;
+  font-size: 2.5rem;
+  height: 9%;
+  color: white;
+  font-weight: bold;
+}
+
+#Custom_page .content .background {
+  height: 100%;
+}
+
+#Custom_page .content .detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98.5%;
+  height: 97.5%;
+}
+
+#Custom_page .content .detail .set_choose {
+  position: absolute;
+  top: 6.7%;
+  left: 46.5%;
+  height: 6%;
+}
+
+#Custom_page .content .detail .set_choose #default {
+  height: 100%;
+}
+
+#Custom_page .content .detail .set_choose #default:hover {
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+}
+
+#Custom_page .content .detail .set_choose #history {
+  position: relative;
+  left: 1%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+#Custom_page .content .detail .set_choose #history:hover {
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+}
+
+#Custom_page .content .detail .burger_pic {
+  position: absolute;
+  left: 7%;
+  top: 17%;
+  height: 76.5%;
+  width: 33%;
+}
+
+#Custom_page .content .detail .burger_pic .pic {
+  width: 100%;
+}
+
+#Custom_page .content .detail .burger_pic #cheese_pic {
+  opacity: 1;
+}
+
+#Custom_page .content .detail .burger_pic #tomato_pic {
+  opacity: 1;
+}
+
+#Custom_page .content .detail .burger_pic #cucumber_pic {
+  opacity: 1;
+}
+
+#Custom_page .content .detail .burger_pic #meat_pic {
+  opacity: 1;
+}
+
+#Custom_page .content .detail .burger_pic #lettuce_pic {
+  opacity: 1;
+}
+
+#Custom_page .content .detail .buger_op {
+  position: absolute;
+  left: 46%;
+  top: 39%;
+  height: 41%;
+  width: auto;
+}
+
+#Custom_page .content .detail .buger_op .tag {
+  height: 10.4%;
+}
+
+#Custom_page .content .detail .buger_op .tag:hover {
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+}
+
+#Custom_page .content .detail .buger_op #cheese_op {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
+#Custom_page .content .detail .buger_op #tomato_op {
+  position: absolute;
+  left: 0;
+  top: 22.4%;
+  opacity: 1;
+}
+
+#Custom_page .content .detail .buger_op #cucumber_op {
+  position: absolute;
+  left: 0;
+  top: 44.8%;
+  opacity: 1;
+}
+
+#Custom_page .content .detail .buger_op #meat_op {
+  position: absolute;
+  left: 0;
+  top: 67.2%;
+  opacity: 1;
+}
+
+#Custom_page .content .detail .buger_op #lettuce_op {
+  position: absolute;
+  left: 0;
+  top: 89.6%;
+  opacity: 1;
+}
+
+#Custom_page .content .detail .sauce_op {
+  position: absolute;
+  left: 69.5%;
+  top: 33.5%;
+  height: 13%;
+  width: 17%;
+}
+
+#Custom_page .content .detail .sauce_op .tag {
+  height: 37.5%;
+  width: auto;
+}
+
+#Custom_page .content .detail .sauce_op .tag:hover {
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+}
+
+#Custom_page .content .detail .sauce_op #spicy_sauce {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+#Custom_page .content .detail .sauce_op #wasabi_sauce {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.4;
+}
+
+#Custom_page .content .detail .sauce_op #peanut_sauce {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.4;
+}
+
+#Custom_page .content .detail .sauce_op #no_sauce {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.4;
+}
+
+#Custom_page .content .detail #cancel {
+  position: absolute;
+  left: 65%;
+  top: 84%;
+  height: 8%;
+}
+
+#Custom_page .content .detail #cancel:hover {
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+}
+
+#Custom_page .content .detail #add_to_cart {
+  position: absolute;
+  left: 77%;
+  top: 84%;
+  height: 8%;
+}
+
+#Custom_page .content .detail #add_to_cart:hover {
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+}
+
+#Custom_page .content .detail #add {
+  position: absolute;
+  top: 69.5%;
+  left: 88%;
+  height: 3.5%;
+}
+
+#Custom_page .content .detail #add:hover {
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+}
+
+#Custom_page .content .detail #minus {
+  position: absolute;
+  top: 69.5%;
+  left: 72%;
+  height: 3.5%;
+}
+
+#Custom_page .content .detail #minus:hover {
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+}
+
+#Custom_page .content .detail #amount {
+  position: absolute;
+  top: 68.2%;
+  left: 80.5%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#cover {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: none;
+}
+
+#Map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+}
+
+#Map .Map_img {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  width: 50%;
+}
+
+#Menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+}
+
+#Menu .Menu_img {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  width: 70%;
+}
+
+
+
+/*modal control*/
+.modal-body {
+  width: 60%;
+  height: 40%;
+}
+
+/*modal control*/
+/*this is third page config*/
+.red {
+  background-color: red;
+}
+
+.red hover {
+  background-color: red;
+}
+
+
+.step1 {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  padding: 0.5% 0 0 2vw;
+}
+
+#chtext2{
+  margin: 0 0 7px 0;
+}
+
+#choosebotton {
+  position: relative;
+  top: 0;
+  width: 65%;
+  height: 40%;
+  left: 0%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  z-index: 1;
+}
+
+#mapbox {
+  display: none;
+  top: 0;
+  width: 200%;
+  height: 60%;
+  left: 0%;
+  border-radius: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  z-index: 0;
+}
+
+
+#mapboximg {
+  display: none;
+  position: relative;
+  top: -45%;
+  //width: 78%;
+  //height: 45%;
+  left: 0%;
+  border-radius: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  z-index: 5;
+}
+
+#storeinfo1 {
+  position: relative;
+  top: 0%;
+  padding: 15px 0px 5px 0px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  font-family: Microsoft JhengHei;
+}
+
+#storeinfo2 {
+  position: relative;
+  top: 0%;
+  padding: 0px 0px 0px 0px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  font-family: Microsoft JhengHei;
+}
+
+.step2 {
+  position: absolute;
+  left: 25%;
+  height: 100%;
+  width: 70%;
+  padding: 0.5% 0 0 4vw;
+  display: none;
+}
+
+.step3 {
+  position: absolute;
+  left: 49%;
+  height: 100%;
+  width: 33%;
+  padding: 0.5% 0 0 0;
+  display: none;
+}
+
+.opacity {
+  opacity: 0.4;
+}
+
+.button_step {
+  font-weight: bold;
+  line-height: 0;
+  font-size: 26px;
+  border-radius: 10px;
+  height: 45px;
+}
+
+#default {
+  position: relative;
+  width: 18%;
+  top: 0%;
+  left: 0;
+}
+
+#self_defind {
+  position: relative;
+  width: 18%;
+  top: 0%;
+  left: 1.2%;
+}
+
+.payBlock {
+  position: relative;
+  width: 100%;
+  top: 0%;
+}
+
+#line {
+  position: relative;
+  width: 48%;
+  left: 0%;
+  top: -2vw;
+  cursor: pointer;
+}
+
+#wallet {
+  position: relative;
+  width: 48%;
+  left: 0%;
+  top: -2.7vw;
+  cursor: pointer;
+}
+
+#card {
+  position: relative;
+  width: 48%;
+  left: 5%;
+  top: 0%;
+  cursor: pointer;
+}
+
+#yoyo {
+  position: relative;
+  width: 48%;
+  left: 5%;
+  top: 0%;
+  cursor: pointer;
+}
+
+#confirm_red {
+  position: relative;
+  top: 0%;
+  background-color: red;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  height: 45px;
+  left: 0;
+  display: none;
+}
+
+.time_block {
+  position: relative;
+  width: 18%;
+  height: 50%;
+  top: 0%;
+  padding: 10px;
+  background-color: black;
+  overflow: hidden;
+  font-size: 30px;
+  text-overflow: clip;
+  font-weight: bold;
+  line-height: 45px;
+  color: white;
+}
+
+.time_block #week {
+  color: white;
+  font-size: 20px;
+}
+
+.time_block #week_ {
+  color: white;
+  font-size: 20px;
+}
+
+#cost {
+  display: none;
+  position: relative;
+  width: 18%;
+  top: -100%;
+  left: 19.5%;
+}
+
+.next {
+  background-color: red;
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  bottom: 8%;
+}
+
+.time_table {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  top: -50%;
+  left: 37%;
+  background-color: #e6e6e6;
+  padding: 20px;
+  display: none;
+  background-image: url("../img/timeboard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.date_selecter {
+  position: absolute;
+  top: 13%;
+  left: 40%;
+  width: 20%;
+  height: 25%;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hour_selecter {
+  position: absolute;
+  top: 48%;
+  left: 45%;
+  width: 16%;
+  height: 20%;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.minute_selecter {
+  position: absolute;
+  top: 72%;
+  left: 45%;
+  width: 10%;
+  height: 12%;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.block_selected {
+  background-color: #ffffff;
+}
+
+
+
+.mid_icon {
+  display: inline-block;
+  position: relative;
+  margin: 0px 6.5vw 0px 0px;
+  left: 8vw;
+  top: 7.5vw;
+  transform: translate(0%, 0%);
+  //border: 2px solid gray;
+}
+
+#signin {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 65%;
+}
+
+#signin_bg{
+  position: relative;
+  left: 10%;
+  width: 100%;
+  opacity: 0;
+}
+
+#signin_text {
+  position: absolute;
+  bottom: 79%;
+  left: 6.5%;
+  font-size:4vw;
+  color: white;
+  height: 10%;
+  width: 30%;
+  font-weight: bold;
+  opacity: 0;
+}
+
+#signup1 {
+  position: absolute;
+  bottom: 78%;
+  left: 62%;
+  width: 28%;
+  height: 5%;
+  font-size: 0.9vw;
+  font-weight: lighter;
+  opacity: 0;
+  font-family: Microsoft JhengHei;
+  background-color: black;
+  color: gray;
+}
+
+#mail_text {
+  position: absolute;
+  bottom: 67%;
+  left: 6.5%;
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  height: 5%;
+  width: 15%;
+  transform: scale(1, 1);
+  opacity: 0;
+}
+
+#mail_input {
+  position: absolute;
+  bottom: 59%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-size: 1.2vw;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+#passward_text {
+  position: absolute;
+  bottom: 45%;
+  left: 6.5%;
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  height: 5%;
+  width: 15%;
+  transform: scale(1, 1);
+  opacity: 0;
+}
+
+#passward_input {
+  position: absolute;
+  bottom: 39%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-size: 1.2vw;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+#forgetpassward_text {
+  position: absolute;
+  bottom: 34%;
+  left: 6.5%;
+  font-size:1vw;
+  color: white;
+  height: 5%;
+  width: 15%;
+  transform: scale(1, 1);
+  opacity: 0;
+  font-weight: lighter;
+}
+
+#signinbotton {
+  position: absolute;
+  bottom: 13%;
+  left: 6.5%;
+  width: 38%;
+  height: 10%;
+  font-size: 1.8vw;
+  font-weight: bold;
+  opacity: 0;
+}
+
+#fbbotton {
+  position: absolute;
+  bottom: 2.5%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.1vw;
+  font-weight: lighter;
+  opacity: 0;
+  background-color: rgb(46, 125, 245);
+}
+
+
+#signup {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 65%;
+}
+
+#signup_bg{
+  position: relative;
+  left: 10%;
+  width: 100%;
+  opacity: 0;
+}
+
+#signup_text {
+  position: absolute;
+  bottom: 79%;
+  left: 6.5%;
+  font-size:4vw;
+  color: white;
+  height: 10%;
+  width: 30%;
+  font-weight: bold;
+  opacity: 0;
+}
+
+#signup2 {
+  position: absolute;
+  bottom: 78%;
+  left: 62%;
+  width: 28%;
+  height: 5%;
+  font-size: 0.9vw;
+  font-weight: lighter;
+  opacity: 0;
+  font-family: Microsoft JhengHei;
+  background-color: black;
+  color: gray;
+}
+
+#name_text_up {
+  position: absolute;
+  bottom: 67%;
+  left: 6.5%;
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  height: 5%;
+  width: 15%;
+  opacity: 0;
+}
+
+#name_input_up {
+  position: absolute;
+  bottom: 62%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-size: 1.2vw;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+#mail_text_up {
+  position: absolute;
+  bottom: 53%;
+  left: 6.5%;
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  height: 5%;
+  width: 15%;
+  opacity: 0;
+}
+
+#mail_input_up {
+  position: absolute;
+  bottom: 48%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-size: 1.2vw;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+#passward_text_up {
+  position: absolute;
+  bottom: 39%;
+  left: 6.5%;
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  height: 5%;
+  width: 15%;
+  transform: scale(1, 1);
+  opacity: 0;
+}
+
+#passward_input_up {
+  position: absolute;
+  bottom: 34%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-size: 1.2vw;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+#signupbotton {
+  position: absolute;
+  bottom: 13%;
+  left: 6.5%;
+  width: 38%;
+  height: 10%;
+  font-size: 1.8vw;
+  font-weight: bold;
+  opacity: 0;
+}
+
+#fbbotton_up {
+  position: absolute;
+  bottom: 2.5%;
+  left: 6.5%;
+  width: 38%;
+  height: 7%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.1vw;
+  font-weight: lighter;
+  opacity: 0;
+  background-color: rgb(46, 125, 245);
+}
+
+
+#Wrap #wrapped_content #finish_order{
+  position: absolute;
+  top: 0;
+  left: 25%;
+  height: 90%;
+  width: 57.5%;
+}
+
+#Wrap #wrapped_content #finish_order #finish_order_bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#Wrap #wrapped_content #finish_order .time{
+  position: absolute;
+  top: 25%;
+  left: 14%;
+  height: 8%;
+  width: 27%;
+}
+
+#Wrap #wrapped_content #finish_order .please{
+  position: absolute;
+  left: 0;
+  bottom: 6%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.5vw;
+  color: black;
+}
+#Wrap #wrapped_content #finish_order #TIME{
+  position: absolute;
+  left: 23.5%;
+  bottom: 0;
+  width: 100%;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  font-size: 1.8vw;
+  color: red;
+}
+
+#Wrap #wrapped_content #finish_order .place{
+  position: absolute;
+  top: 33%;
+  left: 12%;
+  height: 8%;
+  width: 33%;
+}
+
+#Wrap #wrapped_content #finish_order .goto{
+  position: absolute;
+  left: 2%;
+  bottom: 6%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: black;
+}
+
+#Wrap #wrapped_content #finish_order #PLACE{
+  position: absolute;
+  left: 14%;
+  bottom: 0;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  font-size: 1.8vw;
+  color: red;
+}
+
+#Wrap #wrapped_content #finish_order .customer_number{
+  position: absolute;
+  top: 41%;
+  left: 13%;
+  height: 8%;
+  width: 33%;
+}
+
+#Wrap #wrapped_content #finish_order #CUSTOMER_NUMBER{
+  position: absolute;
+  left: 23%;
+  bottom: 0;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  font-size: 1.8vw;
+  color: red;
+}
+
+#Wrap #wrapped_content #finish_order .take{
+  position: absolute;
+  left: 53.5%;
+  bottom: 6%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.5vw;
+  color: black;
+}
+
+#Wrap #wrapped_content #finish_order .password_text{
+  position: absolute;
+  left: 25%;
+  bottom: 30%;
+  font-family: Microsoft JhengHei;
+  font-size: 0.9vw;
+  color: white;
+}
+
+#Wrap #wrapped_content #finish_order #password_number{
+  position: absolute;
+  left: 24%;
+  bottom: 20%;
+  font-family: Microsoft JhengHei;
+  font-size: 2vw;
+  color: white;
+}
+
+
+.left {
+  position: absolute;
+  left: 2%;
+  width: 16%;
+  height: 100%;
+  float: left;
+}
+
+.right {
+  position: absolute;
+  left: 20%;
+  width: 70%;
+  height: 90%;
+  float: right;
+}
+
+.per_icon {
+  width: 100%;
+}
+
+.text{
+  position: absolute;
+  top: 26%;
+  left: 39%;
+  font-size: 1.3vw;
+  font-weight: bold;
+  font-family: Microsoft JhengHei;
+  color: black;
+}
+
+#shop{
+  position: absolute;
+  top: 36%;
+}
+
+#coupon{
+  position: absolute;
+  top: 46%;
+}
+
+#info{
+  position: absolute;
+  top: 56%;
+}
+
+#el_wallet{
+  position: absolute;
+  top: 66%;
+}
+
+#comment{
+  position: absolute;
+  top: 76%;
+}
+
+#setting{
+  position: absolute;
+  top: 86%;
+}
+
+#head {
+  position: absolute;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  margin: 0 0 12% 0;
+  background-color: gray;
+}
+
+#personal {
+  position: relative;
+  width: 100%;
+  height: 38%;
+  margin: 0 0 1.5% 0;
+}
+
+#personal .hello{
+  position: absolute;
+  top: 22%;
+  left: 2%;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  font-size: 3.3vw;
+  color: white;
+}
+
+#personal .name{
+  position: absolute;
+  top: 58%;
+  left: 2%;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  font-size: 2.4vw;
+  color: white;
+}
+#personal #gogo_order{
+  position: absolute;
+  bottom: 2%;
+  right: 0;
+  width: 20%;
+  height: 17%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.2vw;
+  font-weight: bolder;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-radius: 13px;
+
+  
+}
+#personalbox {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 65.5%;
+  background-color: white;
+  text-align: center;
+}
+
+#personalbox p{
+  height: 90%;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  font-size: 3vw;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
