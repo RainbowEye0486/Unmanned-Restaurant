@@ -752,56 +752,201 @@ $('#signupbotton').on('click', function () {
 /*以下是會員登入頁面控制的JQuery*/
 $('#shop').on('click', function () {
     $('#shop').html(
-        `<img src="./img/工作區域 2 (2).png" style="width:100%;">
-    <div class="text">購買紀錄</div>`)
-    $('.person_block').css('display','none')
-    $('.shop_block').css('display','block')
-})
-
-$('#coupon').on('click', function () {
+        `<img src="./img/M工作區域 7.png" style="width:100%;">
+    `)
     $('#coupon').html(
         `<img src="./img/工作區域 3 (1).png" style="width:100%;">
     <div class="text">折價卷</div>`)
-    $('.person_block').css('display','none')
-    $('.coupon_block').css('display','block')
-})
 
-$('#info').on('click', function () {
     $('#info').html(
         `<img src="./img/工作區域 4 (2).png" style="width:100%;">
         <div class="text">通知</div>`)
-    $('.person_block').css('display','none')
-    $('.info_block').css('display','block')
-})
 
-$('#el_wallet').on('click', function () {
     $('#el_wallet').html(
         `<img src="./img/工作區域 5 (2).png" style="width:100%;">
-        <div class="text">我的錢包</div>`)
-        $('.person_block').css('display','none')
-        $('.el_block').css('display','block')
-})
+            <div class="text">我的錢包</div>`)
 
-$('#comment').on('click', function () {
     $('#comment').html(
         ` <img src="./img/工作區域 6 (2).png" style="width:100%;">
-        <div class="text">評論</div>`
+                <div class="text">好友獨享</div>`
     )
-    $('.person_block').css('display','none')
-    $('.comment_block').css('display','block')
-})
 
-$('#setting').on('click', function () {
     $('#setting').html(
         ` <img src="./img/工作區域 7 (2).png" style="width:100%;">
         <div class="text"> 個人設定</div>`
     )
-    $('.person_block').css('display','none')
-    $('.setting_block').css('display','block')
+
+    $('.person_block').css('display', 'none')
+    $('.shop_block').css('display', 'block')
 })
 
-$('.info').on('click',function(){
-    $(this).attr('background-image','url(../img/mail_open.png)')
-    $(this).attr('background-color','#e6e6e6')
+$('#coupon').on('click', function () {
+    $('#shop').html(
+        `<img src="./img/工作區域 2 (2).png" style="width:100%;">
+        <div class="text">購買紀錄</div>
+    `)
+
+    $('#coupon').html(
+        `<img src="./img/M工作區域 8.png" style="width:100%;">
+    >`)
+
+    $('#info').html(
+        `<img src="./img/工作區域 4 (2).png" style="width:100%;">
+        <div class="text">通知</div>`)
+
+    $('#el_wallet').html(
+        `<img src="./img/工作區域 5 (2).png" style="width:100%;">
+            <div class="text">我的錢包</div>`)
+
+    $('#comment').html(
+        ` <img src="./img/工作區域 6 (2).png" style="width:100%;">
+                <div class="text">好友獨享</div>`
+    )
+
+    $('#setting').html(
+        ` <img src="./img/工作區域 7 (2).png" style="width:100%;">
+                <div class="text"> 個人設定</div>`
+    )
+
+    $('.person_block').css('display', 'none')
+    $('.coupon_block').css('display', 'block')
 })
- /*以上是會員登入介面的程式碼*/
+
+$('#info').on('click', function () {
+
+    $('#shop').html(
+        `<img src="./img/工作區域 2 (2).png" style="width:100%;">
+        <div class="text">購買紀錄</div>
+    `)
+
+    $('#info').html(
+        `<img src="./img/M工作區域 9.png" style="width:100%;">
+        `)
+    $('#coupon').html(
+        `<img src="./img/工作區域 3 (1).png" style="width:100%;">
+        <div class="text">折價卷</div>`)
+
+    $('#el_wallet').html(
+        `<img src="./img/工作區域 5 (2).png" style="width:100%;">
+            <div class="text">我的錢包</div>`)
+
+    $('#comment').html(
+        ` <img src="./img/工作區域 6 (2).png" style="width:100%;">
+                <div class="text">好友獨享</div>`
+    )
+
+    $('#setting').html(
+        ` <img src="./img/工作區域 7 (2).png" style="width:100%;">
+                <div class="text"> 個人設定</div>`
+    )
+
+    $('.person_block').css('display', 'none')
+    $('.info_block').css('display', 'block')
+})
+
+$('#el_wallet').on('click', function () {
+
+    $('#shop').html(
+        `<img src="./img/工作區域 2 (2).png" style="width:100%;">
+        <div class="text">購買紀錄</div>
+    `)
+
+
+    $('#coupon').html(
+        `<img src="./img/工作區域 3 (1).png" style="width:100%;">
+    <div class="text">折價卷</div>`)
+
+    $('#info').html(
+        `<img src="./img/工作區域 4 (2).png" style="width:100%;">
+        <div class="text">通知</div>`)
+
+    $('#el_wallet').html(
+        `<img src="./img/M工作區域 10.png" style="width:100%;">
+       `)
+
+    $('#setting').html(
+        ` <img src="./img/工作區域 7 (2).png" style="width:100%;">
+            <div class="text"> 個人設定</div>`
+    )
+
+    $('#comment').html(
+        ` <img src="./img/工作區域 6 (2).png" style="width:100%;">
+            <div class="text">好友獨享</div>`
+    )
+
+    $('.person_block').css('display', 'none')
+    $('.el_block').css('display', 'block')
+})
+
+$('#comment').on('click', function () {
+    
+    $('#shop').html(
+        `<img src="./img/工作區域 2 (2).png" style="width:100%;">
+        <div class="text">購買紀錄</div>
+    `)
+
+    $('#coupon').html(
+        `<img src="./img/工作區域 3 (1).png" style="width:100%;">
+    <div class="text">折價卷</div>`)
+
+    $('#info').html(
+        `<img src="./img/工作區域 4 (2).png" style="width:100%;">
+        <div class="text">通知</div>`)
+
+    $('#el_wallet').html(
+        `<img src="./img/工作區域 5 (2).png" style="width:100%;">
+        <div class="text">我的錢包</div>`)
+
+    $('#comment').html(
+        ` <img src="./img/M工作區域 11.png" style="width:100%;">
+        `
+    )
+
+    $('#setting').html(
+        ` <img src="./img/工作區域 7 (2).png" style="width:100%;">
+                <div class="text"> 個人設定</div>`
+    )
+
+    $('.person_block').css('display', 'none')
+    $('.comment_block').css('display', 'block')
+})
+
+$('#setting').on('click', function () {
+
+    $('#shop').html(
+        `<img src="./img/工作區域 2 (2).png" style="width:100%;">
+        <div class="text">購買紀錄</div>
+    `)
+
+    $('#coupon').html(
+        `<img src="./img/工作區域 3 (1).png" style="width:100%;">
+    <div class="text">折價卷</div>`)
+
+    $('#setting').html(
+        ` <img src="./img/M工作區域 12.png" style="width:100%;">
+        `
+    )
+
+    $('#info').html(
+        `<img src="./img/工作區域 4 (2).png" style="width:100%;">
+        <div class="text">通知</div>`)
+
+    $('#el_wallet').html(
+        `<img src="./img/工作區域 5 (2).png" style="width:100%;">
+            <div class="text">我的錢包</div>`)
+
+    $('#comment').html(
+        ` <img src="./img/工作區域 6 (2).png" style="width:100%;">
+        <div class="text">好友獨享</div>`
+    )
+    $('.person_block').css('display', 'none')
+    $('.setting_block').css('display', 'block')
+})
+
+$('.info').on('click', function () {
+    $(this).attr('background-image', 'url(../img/mail_open.png)')
+    $(this).attr('background-color', '#e6e6e6')
+})
+
+
+/*以上是會員登入介面的程式碼*/

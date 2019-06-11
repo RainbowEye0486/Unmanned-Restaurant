@@ -189,9 +189,59 @@ body {
 
 }
 
+
 #coupon{
   position: absolute;
   top: 46%;
+}
+
+.coupon_title{
+  font-family: Microsoft JhengHei;
+  background-color: black;
+    color: white;
+    width: 96%;
+    height: 15%;
+    margin: 2%;
+    position: absolute;
+    font-size: 1.5vw;
+    line-height: 4vw;
+}
+
+.coupon_code{
+  position: absolute;
+  right: 13%;
+  top: 25%;
+  width: 28%;
+  height: 80%;
+  border-radius: 22%;
+}
+
+.invited_code{
+  position: absolute;
+  left: 3%;
+  top: 47%;
+  width: 28%;
+  height: 81%;
+  border-radius: 10px;
+}
+
+#ok_coupon{
+  position: absolute;
+  right: 4%;
+  height: 60%;
+  top: 20%;
+  width: 7%;
+  font-size: 1.5vw;
+  line-height: 10px;
+  background-color: #f2f2f2;
+  border-radius: 22%;
+}
+
+.under_coupon{
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  bottom: 0%;
 }
 
 #info{
@@ -207,6 +257,18 @@ body {
 #comment{
   position: absolute;
   top: 76%;
+}
+
+.share_icon{
+  width: 4%;
+  padding-bottom: 4%;
+  height: 0;
+  background-image: url(../img/M工作區域\ 26.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 46.7%;
+  left: 32%;
 }
 
 #setting{
@@ -249,6 +311,17 @@ body {
   font-size: 2.4vw;
   color: white;
 }
+
+#personal #classrank{
+  position: absolute;
+  top: 85%;
+  left: 2%;
+  font-family: Microsoft JhengHei;
+  font-weight: 400;
+  font-size: 1vw;
+  color: white;
+}
+
 #personal #gogo_order{
   position: absolute;
   bottom: 2%;
@@ -293,6 +366,78 @@ body {
   display: none;
 }
 
+.shop_inner{
+  position: absolute;
+  width:100%;
+  height: 90%;
+  bottom: 0%;
+  overflow: scroll;
+}
+
+.shop{
+  position: relative;
+  width: 95%;
+  height: 19%;
+  background-color: #b3b3b3;
+  margin: 15px 25px;
+  border-radius: 2px;
+}
+
+.shop p{
+  vertical-align: middle;
+  position: absolute;
+  font-family: Microsoft JhengHei;
+  font-size: 1vw;
+  top:33%;
+}
+
+.shop #order_time{
+  left:3%;
+  top:25%;
+}
+
+.shop #pay_way{
+  left:15%;
+}
+
+.shop #process{
+  left:30%;
+}
+
+.shop #left_time{
+  left:27%;
+}
+
+.shop #take_time{
+  left:40%;
+}
+
+.shop #pay_money{
+  left:60%;
+}
+
+.detail_pic{
+  position: absolute;
+  padding-bottom: 4%;
+  width: 8%;
+  background-image: url(../img/M工作區域\ 15.png);
+  right: 11%;
+  top: 31%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.raking_pic{
+  position: absolute;
+  padding-bottom: 4%;
+  width: 8%;
+  background-image: url(../img/M工作區域\ 16.png);
+  right: 0%;
+  top: 31%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .coupon_block{
   display: none;
 }
@@ -316,6 +461,26 @@ body {
   position: relative;
   top:30%;
   font-size: 1.5vw;
+}
+
+.comment_title{
+  font-family: Microsoft JhengHei;
+  background-color: black;
+    color: white;
+    width: 96%;
+    height: 15%;
+    margin: 2%;
+    position: absolute;
+    font-size: 2.5vw;
+    text-align: left;
+}
+
+.comment_text{
+  font-family: Microsoft JhengHei;
+    position: absolute;
+    text-align: left;
+    top: 21%;
+    left: 3%;
 }
 
 .setting_block{
@@ -371,6 +536,16 @@ body {
   height: 0%;
   top: 18%;
   left: 35%;
+}
+
+.bonus_text{
+  font-family: Microsoft JhengHei;
+    position: absolute;
+    text-align: center;
+    font-size: 1vw;
+    color: white;
+    left: 36%;
+    top: 6%;
 }
 
 .accumulate_block{

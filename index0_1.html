@@ -60,7 +60,7 @@
                 </div>
                 <div class="per_icon" id="comment">
                     <img src="./img/工作區域 6 (2).png" style="width:100%;">
-                    <div class="text">評論</div>
+                    <div class="text">好友獨享</div>
                 </div>
                 <div class="per_icon" id="setting">
                     <img src="./img/工作區域 7 (2).png" style="width:100%;">
@@ -72,17 +72,51 @@
                 <div id="personal">
                     <div class="hello">HELLO,</div>
                     <div class="name">Name</div>
+                    <div id="classrank">會員等級 : <span style="color: darkorange">白金會員</span></div>
                     <button type="button" class="btn btn-secondary btn-lg " id='gogo_order'>點餐去!</button>
                 </div>
                 <div id="personalbox">
-                    <!-- <p>Coming soon.</p>-->
+                
                     <div class="shop_block person_block">
-                        <p class='personal_font'>尚未有未處理訂單</p>
+                        <div class="shop_inner">
+                                <p class='personal_font' style="display: none;">尚未有未處理訂單</p>
+
+                                <div class="shop">
+                                        <p id="order_time">20190503<br>11:21</p>
+                                        <p id="pay_way">信用卡</p>
+                                        <p id="send_topic" >剩餘10分鐘</p>
+                                        <p id="take_time">11:50</p>
+                                        <p id="pay_money">240</p>
+                                        <div class="detail_pic"></div>
+                                        <div class="raking_pic"></div>
+                                </div>
+                                <div class="shop">
+                                        <p id="order_time">20190503<br>11:21</p>
+                                        <p id="pay_way">信用卡</p>
+                                        <p id="send_topic" >剩餘10分鐘</p>
+                                        <p id="take_time">11:50</p>
+                                        <p id="pay_money">240</p>
+                                        <div class="detail_pic"></div>
+                                        <div class="raking_pic"></div>
+                                </div>
+                        </div>
+                        
+                       
 
                     </div>
                     <div class="coupon_block person_block">
-                        <div class="coupon_each"></div>
-                        <div class="coupon_each"></div>
+                        <div class="coupon_title">
+                            <p style="position: absolute;left:38%;">輸入折價卷代碼</p>
+                            <div class="form-group coupon_code">
+                                    <input type="check" class="form-control" id="coupon_code" style="height: 60%;border-radius : 5px; background-color:#f2f2f2">
+                            </div>
+                            <button type="button" class="btn btn-secondary btn-lg setting_btn" id='ok_coupon'>OK</button>
+                        </div>
+                        <div class="under_coupon">
+                            <div class="coupon_each"></div>
+                            <div class="coupon_each"></div>
+                        </div>
+                        
                     </div>
                     <div class="info_block person_block">
                         <div class="info_inner">
@@ -110,39 +144,40 @@
                                 <p id="send_name">黑膠漢堡</p>
                                 <p id="send_topic">已完成訂單</p>
                             </div>
-                            <div class="info">
-                                <div class="mail_pic"></div>
-                                <p id="send_time">20190503</p>
-                                <p id="send_name">黑膠漢堡</p>
-                                <p id="send_topic">已完成訂單</p>
-                            </div>
-                            <div class="info">
-                                <div class="mail_pic"></div>
-                                <p id="send_time">20190503</p>
-                                <p id="send_name">黑膠漢堡</p>
-                                <p id="send_topic">已完成訂單</p>
-                            </div>
+                           
                         </div>
                     </div>
                     <div class="el_block person_block">
                         <div class="remain_block">
+                                <p class="bonus_text">錢包餘額</p>
                             <p class="price_p" id='remain_text'>$680</p>
                             <button type="button" class="btn btn-secondary btn-lg check_btn"
-                                id='remain_btn'>查詢明細</button>
+                                id='remain_btn'>我要儲值</button>
                         </div>
                         <div class="bonus_block">
+                            <p class="bonus_text">紅利金餘額</p>
                             <p class="price_p" id='bonus_text'>$15</p>
                             <button type="button" class="btn btn-secondary btn-lg check_btn"
-                                id='bonus_btn'>查詢明細</button>
+                                id='bonus_btn'>如何獲得紅利金?</button>
                         </div>
                         <div class="accumulate_block">
+                                <p class="bonus_text">消費金額累計</p>
                             <p class="price_p" id='accumulate_text'>$340</p>
+                            <p class="bonus_text" style="top:60%;left:18%">再1160可以升級黃金會員</p><!--這部分感覺比較難寫就是-->
                             <button type="button" class="btn btn-secondary btn-lg check_btn"
-                                id='accumulate_btn'>查看會員獨享優惠</button>
+                                id='accumulate_btn'>查看會員制度優惠</button>
                         </div>
                     </div>
                     <div class="comment_block person_block">
-                        <p class='personal_font'>尚未開放!請耐心等候!</p>
+                        <div class="comment_title">   歡慶開幕，好友分享折扣多更多!</div>
+                        <div class="comment_text">
+                            <p style="font-size: 1.7vw; font-weight: 600;">一起分享</p>
+                            <p style="font-size: 1vw;">分享給您朋友首次訂餐$100的折扣優惠!<br>當您的朋友首次訂餐，您有能獲得$100的折扣優惠!</p>
+                        </div>
+                        <div class="form-group invited_code">
+                            <input type="check" class="form-control" style="height: 10%;border-radius : 5px; background-color:#f2f2f2">
+                        </div>
+                        <div class="share_icon"></div>
                     </div>
                     <div class="setting_block person_block">
                         <p></p>
@@ -183,9 +218,9 @@
                                 <input type="check" class="form-control" id="check2" style='top:60%;'>
                             </div>
                             <button type="button" class="btn btn-secondary btn-lg setting_btn" id='cancel-right'
-                                style='bottom:10%;right:30%;'>取消</button>
+                                style='bottom:-10%;right:30%;'>取消</button>
                             <button type="button" class="btn btn-secondary btn-lg setting_btn" id='confirm-right'
-                                style='bottom:10%;right:10%;'>確認修改</button>
+                                style='bottom:-10%;right:10%;'>確認修改</button>
                         </div>
 
                     </div>
