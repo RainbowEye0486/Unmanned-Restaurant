@@ -153,6 +153,23 @@ body {
 /*這裡改動*/
 
 /*跟會員有關的頁面*/
+
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: white;
+  z-index: 100;/*放在上方*/
+  display: none;
+}
+
+.mask_top{
+  /*display:none;*/
+  position: absolute;
+  z-index: 10000;
+}
+
 .left {
   position: absolute;
   left: 2%;
@@ -336,6 +353,7 @@ body {
   color: black;
   border-radius: 13px;  
 }
+
 #personalbox {
   position: relative;
   top: 0;
@@ -383,21 +401,22 @@ body {
   border-radius: 2px;
 }
 
-.shop p{
+.shop_block p{
   vertical-align: middle;
   position: absolute;
   font-family: Microsoft JhengHei;
   font-size: 1vw;
+  font-weight: 900;
   top:33%;
 }
 
 .shop #order_time{
-  left:3%;
-  top:25%;
+  left:2%;
+  top:23%;
 }
 
 .shop #pay_way{
-  left:15%;
+  left:17%;
 }
 
 .shop #process{
@@ -405,15 +424,15 @@ body {
 }
 
 .shop #left_time{
-  left:27%;
+  left:31%;
 }
 
 .shop #take_time{
-  left:40%;
+  left:51%;
 }
 
 .shop #pay_money{
-  left:60%;
+  left:66%;
 }
 
 .detail_pic{
@@ -425,6 +444,158 @@ body {
   top: 31%;
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
+}
+
+.detail_block{
+  position: fixed;
+  width: 63%;
+  padding-bottom: 33%;
+  height: 0;
+  left: 29%;
+  top: 30%;
+  background-color: #e6e6e6;
+  display: none;
+}
+
+.detail_block p{
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+.dodo_pic{
+  position: absolute;
+  background-image: url(../img/M工作區域\ 14.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+  height: 10%;
+  top: 5%;
+  left: 30%;
+}
+
+.detail_right{
+  position: absolute;
+  border-left: 4px black solid;
+  width: 47%;
+  height: 68%;
+  left: 50%;
+  top: 20%;
+}
+
+.detail_place{
+  position: absolute;
+  background-image: url(../img/M工作區域\ 19.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 28%;
+  height: 0%;
+  left: 5%;
+  padding-bottom: 10%;
+}
+
+.detail_time{
+  position: absolute;
+  background-image: url(../img/M工作區域\ 20.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 28%;
+  height: 0%;
+  left: 5%;
+  padding-bottom: 10%;
+  top:30%;
+}
+
+.detail_way{
+  position: absolute;
+  background-image: url(../img/M工作區域\ 21.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 28%;
+  height: 0%;
+  left: 5%;
+  padding-bottom: 10%;
+  top:45%;
+}
+
+.detail_comment{
+  position: absolute;
+  background-image: url(../img/M工作區域\ 22.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 28%;
+  height: 0%;
+  left: 5%;
+  padding-bottom: 10%;
+  top:60%;
+}
+
+.total{
+  position: absolute;
+  border-top: 2px solid black;
+  width: 45%;
+  height: 13%;
+  top: 75%;
+  left: 3%;
+  
+}
+
+.total p{
+  position: absolute;
+  font-size: bold;
+  font-size: 1.8vw;
+}
+
+.detail_white_block{
+  position: absolute;
+  width: 40%;
+  height: 6%;
+  top: 20%;
+  left: 5.5%;
+  font-size: 1vw;
+  background-color: white;
+}
+
+.detail_order_block{
+  position: absolute;
+  width: 45%;
+  height: 40%;
+  top: 26%;
+  left: 3%;
+  overflow: scroll;
+}
+
+.cover{
+  position: absolute;
+  width:90%;
+  height: 35%;
+}
+.cover2{
+  position: absolute;
+  width:100%;
+  height: 50%;
+}
+.detail_order{
+  width: 90%;
+  height: 35%;
+  margin: 2% 0% 5% 5%;
+  display: block;
+  background-color: white;
+}
+
+.detail_order p{
+  top:2%;
+  position: absolute;
+  color:black;
+  font-size: 1.6vw;
+}
+
+.shop_detail{
+  position: absolute;
+  width: 60%;
+  padding-bottom: 40%;
+  background-color: #b3b3b3;
+
 }
 
 .raking_pic{
@@ -447,6 +618,10 @@ body {
   font-family: Microsoft JhengHei;
   font-size: 1.2vw;
   font-weight: bold;
+}
+
+.info_block p{
+  position: absolute;
 }
 
 .el_block{
@@ -597,6 +772,7 @@ body {
   background-color: #b3b3b3;
   margin: 15px 25px;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .info p{
@@ -615,6 +791,37 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.mail{
+    width: 49%;
+    padding-bottom: 42%;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/M工作區域\ 28.png);
+    display: none;
+    
+}
+
+.mail p{
+  position: absolute;
+  font-size: 1.2vw;
+  color: black;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+}
+
+.mail_box{
+  position: absolute;
+    width: 90%;
+    top: 33%;
+    left: 5%;
+    height: 64%;
+}
+
+
 
 #send_time{
   left:15%;
@@ -679,6 +886,91 @@ body {
   font-weight: bold;
   text-align: left;
 
+}
+
+.member_system {
+  background-image: url(../img/M工作區域\ 27.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 66%;
+  height: 0;
+  margin: 0%;
+  padding-bottom: 85%;
+  left: 29%;
+  top: 13%;
+  display: none;
+}
+
+.red_gold {
+  background-image: url(../img/M工作區域\ 29.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 66%;
+  height: 0;
+  margin: 0%;
+  padding-bottom: 85%;
+  left: 29%;
+  top: 20%;
+  display: none;
+}
+
+.cancel_btn{
+  background-image: url('../img/M工作區域\ 18.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right:2%;
+  top:1%;
+  z-index: 100000;
+  cursor: pointer;
+  width: 30px;
+  height:30px;
+}
+
+.comment_list{
+    overflow: scroll;
+    width: 62%;
+    height: 25%;
+    top: 60%;
+    left: 37%;
+    position: absolute;
+}
+
+.comment_list_per{
+  display: block;
+width:100%;
+height: 50%;
+}
+
+.star{
+  position: absolute;
+  left:80%;
+  top:0%;
+  background-image: url(../img/M工作區域\ 25.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:10%;
+  padding-bottom: 10%;
+  cursor: pointer;
+}
+
+.comment_list p{
+  top:0;
+}
+
+#send_out{
+  background-color: black;
+  color: red;
+  position: absolute;
+  top: 100%;
+  width: 16%;
+  height: 9%;
+  left: 77%;
+  font-size: 1.2vw;
+  line-height: 1px;
+  font-weight: bold;
+  font-family: Microsoft JhengHei;
+  border-radius: 9px;
 }
 
 /*跟會員有關的頁面*/

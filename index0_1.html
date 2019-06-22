@@ -25,6 +25,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <div class="wrap">
+
+        <!--遮罩-->
+        <div class="mask"></div>
+        <div class="member_system mask_top">
+            <div class="cancel_btn"></div>
+        </div>
+        <div class="red_gold mask_top">
+            <div class="cancel_btn"></div>
+        </div>
         <div id="top_regin"></div>
 
 
@@ -43,28 +52,28 @@
                 <div id="head"></div>
 
                 <div class="per_icon" id="shop">
-                    <img src="./img/工作區域 2 (2).png" style="width:100%;">
-                    <div class="text">購買紀錄</div>
+                    <img src="./img/M工作區域 1.png" style="width:100%;">
+              
                 </div>
                 <div class="per_icon" id="coupon">
-                    <img src="./img/工作區域 3 (1).png" style="width:100%;">
-                    <div class="text">折價卷</div>
+                    <img src="./img/M工作區域 2.png" style="width:100%;">
+                
                 </div>
                 <div class="per_icon" id="info">
-                    <img src="./img/工作區域 4 (2).png" style="width:100%;">
-                    <div class="text">通知</div>
+                    <img src="./img/M工作區域 3.png" style="width:100%;">
+             
                 </div>
                 <div class="per_icon" id="el_wallet">
-                    <img src="./img/工作區域 5 (2).png" style="width:100%;">
-                    <div class="text">我的錢包</div>
+                    <img src="./img/M工作區域 4.png" style="width:100%;">
+              
                 </div>
                 <div class="per_icon" id="comment">
-                    <img src="./img/工作區域 6 (2).png" style="width:100%;">
-                    <div class="text">好友獨享</div>
+                    <img src="./img/M工作區域 5.png" style="width:100%;">
+                 
                 </div>
                 <div class="per_icon" id="setting">
-                    <img src="./img/工作區域 7 (2).png" style="width:100%;">
-                    <div class="text"> 個人設定</div>
+                    <img src="./img/M工作區域 6.png" style="width:100%;">
+              
                 </div>
             </div>
 
@@ -78,26 +87,193 @@
                 <div id="personalbox">
                 
                     <div class="shop_block person_block">
+                        <p style="left:4%;top:3%;">訂購時間</p>
+                        <p style="left:17%;top:3%;">付款方式</p>
+                        <p style="left:33%;top:3%;">處理進度</p>
+                        <p style="left:47%;top:3%;">預計取餐時間</p>
+                        <p style="left:63%;top:3%;">應付金額</p>
+                        <p style="left:77%;top:3%;">看訂單詳細</p>
+                        <p style="left:90%;top:3%;">評價</p>
                         <div class="shop_inner">
                                 <p class='personal_font' style="display: none;">尚未有未處理訂單</p>
 
                                 <div class="shop">
                                         <p id="order_time">20190503<br>11:21</p>
                                         <p id="pay_way">信用卡</p>
-                                        <p id="send_topic" >剩餘10分鐘</p>
+                                        <p id="left_time" >剩餘10分鐘</p>
                                         <p id="take_time">11:50</p>
                                         <p id="pay_money">240</p>
                                         <div class="detail_pic"></div>
                                         <div class="raking_pic"></div>
+                                        
+                                        <div class="detail_block mask_top">
+                                            <div class="dodo_pic"></div>
+                                            <div class="cancel_btn"></div>
+                                            <div class="detail_white_block">
+                                                <p style="left:11%;top:13%;font-size: 1vw;">餐點品項</p>
+                                                <p style="left:58%;top:13%;font-size: 1vw;">數量</p>
+                                                <p style="left:80%;top:13%;font-size: 1vw;">單價</p>
+                                            </div>
+                                            <div class="detail_order_block">
+                                                <div class="detail_order">
+                                                    <div class="cover">
+                                                            <p class="detail_name" style="left: 2%;">黑膠鮮檸鮭魚堡</p>
+                                                            <p class="detail_contain" style="left: 2%;font-size: 1vw;top:45%;">花生醬</p>
+                                                            <p class="detail_number" style="left: 57%;">2</p>
+                                                            <p class="detail_perprice" style="left: 76%;">230</p>
+                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="detail_order">
+                                                    <div class="cover">
+                                                            <p class="detail_name" style="left: 2%;">黑膠起士牛肉堡</p>
+                                                            <p class="detail_contain" style="left: 2%;font-size: 1vw;top:45%;">不要醬</p>
+                                                            <p class="detail_number" style="left: 57%;">1</p>
+                                                            <p class="detail_perprice" style="left: 76%;">120</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="detail_order">
+                                                    <div class="cover">
+                                                            <p class="detail_name" style="left: 2%;">黑膠鮮檸鮭魚堡</p>
+                                                            <p class="detail_contain" style="left: 2%;font-size: 1vw;top:45%;">花生醬</p>
+                                                            <p class="detail_number" style="left: 57%;">2</p>
+                                                            <p class="detail_perprice" style="left: 76%;">230</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="total">
+                                                <p>TATAL COST</p>
+                                                <p id="detail_cost" style="left:80%;">340</p>
+                                            </div>
+                                            <p style="top:66%;left:3%;">使用折價券</p>
+                                            <p id="detail_coupon" style="top:66%;left:41.5%;">-0</p>
+                                                <div class="detail_right">
+                                                    <p id="de_name" style="top:1%;left:37%;">黑膠漢堡台南車站店</p>
+                                                    <p id="de_adress" style="top: 13%;left: 37%;font-size: 1.2vw;">台南市東區大學路26號</p>
+                                                    <p id="de_phone" style="top:21%;left: 37%;font-size: 1.2vw;">電話:(06)237 3472</p>
+                                                    <p id="de_time" style="top:31%;left: 37%;">JUNE19(WED)   12:20</p>
+                                                    <p id="de_payway" style="top:47%;left: 37%;">信用卡付款</p>
+                                                    
+                                                    <p style="top:86%;left:44%;font-size: 1.2vw;">如果喜歡該品項請點擊星星</p>
+
+                                                    <button type="button" class="btn btn-secondary btn-lg " id='send_out'>送出</button>
+                                                    <div class="detail_place" ></div>
+                                                    <div class="detail_time"></div>
+                                                    <div class="detail_way"></div>
+                                                    <div class="detail_comment"></div>
+
+                                                    
+                                                    <div class="comment_list">
+                                                            <div class="comment_list_per">
+                                                                <div class="cover2">
+                                                                    <p class="de_comment">黑膠鮮檸鮭魚堡</p><!--注意這裡是使用class-->
+                                                                    <div class="star"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="comment_list_per">
+                                                                <div class="cover2">
+                                                                    <p class="de_comment">黑膠鮮檸鮭魚堡</p><!--注意這裡是使用class-->
+                                                                    <div class="star">
+                                                                </div> 
+                                                                </div>
+                                                            </div> 
+                                                    </div>
+                                                    
+                                                            
+                                                </div>
+                                        </div>
+                        
                                 </div>
                                 <div class="shop">
                                         <p id="order_time">20190503<br>11:21</p>
                                         <p id="pay_way">信用卡</p>
-                                        <p id="send_topic" >剩餘10分鐘</p>
+                                        <p id="left_time" >剩餘10分鐘</p>
                                         <p id="take_time">11:50</p>
                                         <p id="pay_money">240</p>
                                         <div class="detail_pic"></div>
                                         <div class="raking_pic"></div>
+                                        
+                                        <div class="detail_block mask_top">
+                                            <div class="dodo_pic"></div>
+                                            <div class="cancel_btn"></div>
+                                            <div class="detail_white_block">
+                                                <p style="left:11%;top:13%;font-size: 1vw;">餐點品項</p>
+                                                <p style="left:58%;top:13%;font-size: 1vw;">數量</p>
+                                                <p style="left:80%;top:13%;font-size: 1vw;">單價</p>
+                                            </div>
+                                            <div class="detail_order_block">
+                                                <div class="detail_order">
+                                                    <div class="cover">
+                                                            <p class="detail_name" style="left: 2%;">黑膠鮮檸鮭魚堡</p>
+                                                            <p class="detail_contain" style="left: 2%;font-size: 1vw;top:45%;">花生醬</p>
+                                                            <p class="detail_number" style="left: 57%;">2</p>
+                                                            <p class="detail_perprice" style="left: 76%;">230</p>
+                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="detail_order">
+                                                    <div class="cover">
+                                                            <p class="detail_name" style="left: 2%;">黑膠起士牛肉堡</p>
+                                                            <p class="detail_contain" style="left: 2%;font-size: 1vw;top:45%;">不要醬</p>
+                                                            <p class="detail_number" style="left: 57%;">1</p>
+                                                            <p class="detail_perprice" style="left: 76%;">120</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="detail_order">
+                                                    <div class="cover">
+                                                            <p class="detail_name" style="left: 2%;">黑膠鮮檸鮭魚堡</p>
+                                                            <p class="detail_contain" style="left: 2%;font-size: 1vw;top:45%;">花生醬</p>
+                                                            <p class="detail_number" style="left: 57%;">2</p>
+                                                            <p class="detail_perprice" style="left: 76%;">230</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="total">
+                                                <p>TATAL COST</p>
+                                                <p id="detail_cost" style="left:80%;">340</p>
+                                            </div>
+                                            <p style="top:66%;left:3%;">使用折價券</p>
+                                            <p id="detail_coupon" style="top:66%;left:41.5%;">-0</p>
+                                                <div class="detail_right">
+                                                    <p id="de_name" style="top:1%;left:37%;">黑膠漢堡台南車站店</p>
+                                                    <p id="de_adress" style="top: 13%;left: 37%;font-size: 1.2vw;">台南市東區大學路26號</p>
+                                                    <p id="de_phone" style="top:21%;left: 37%;font-size: 1.2vw;">電話:(06)237 3472</p>
+                                                    <p id="de_time" style="top:31%;left: 37%;">JUNE19(WED)   12:20</p>
+                                                    <p id="de_payway" style="top:47%;left: 37%;">信用卡付款</p>
+                                                    
+                                                    <p style="top:86%;left:44%;font-size: 1.2vw;">如果喜歡該品項請點擊星星</p>
+
+                                                    <button type="button" class="btn btn-secondary btn-lg " id='send_out'>送出</button>
+                                                    <div class="detail_place" ></div>
+                                                    <div class="detail_time"></div>
+                                                    <div class="detail_way"></div>
+                                                    <div class="detail_comment"></div>
+
+                                                    
+                                                    <div class="comment_list">
+                                                            <div class="comment_list_per">
+                                                                <div class="cover2">
+                                                                    <p class="de_comment">黑膠鮮檸鮭魚堡</p><!--注意這裡是使用class-->
+                                                                    <div class="star"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="comment_list_per">
+                                                                <div class="cover2">
+                                                                    <p class="de_comment">黑膠鮮檸鮭魚堡</p><!--注意這裡是使用class-->
+                                                                    <div class="star">
+                                                                </div> 
+                                                                </div>
+                                                            </div> 
+                                                    </div>
+                                                    
+                                                            
+                                                </div>
+                                        </div>
+                        
                                 </div>
                         </div>
                         
@@ -119,31 +295,58 @@
                         
                     </div>
                     <div class="info_block person_block">
+                        <p style="left:17%;top:3%;">收件時間</p>
+                        <p style="left:29%;top:3%;">寄件者</p>
+                        <p style="left:41%;top:3%;">主旨</p>
+                        
                         <div class="info_inner">
                             <div class="info">
                                 <div class="mail_pic"></div>
                                 <p id="send_time">20190503</p>
                                 <p id="send_name">黑膠漢堡</p>
                                 <p id="send_topic">已完成訂單</p>
+                                
+                                <div class="mail mask_top">
+                                   
+                                    <p style="top:12%;left:16%;">主旨</p>
+                                    <p id="mail_topic" style="top:12%;left:27%">恭喜加入會員!請打開信件領取優惠券</p>
+                                    <p style="top:21%;left:13%;">收件時間</p>
+                                    <p id="receive_time" style="top:20%;left:27%;">20190503</p>
+                                    <div class="mail_box">
+                                        <p id="mailtext" style="text-align: left;top:0%;">此信件為系統自動發出之信件，請勿直接回覆(也沒辦法讓你回復)，謝謝您的配合!
+                                            <br><br><br>感謝您成功加入會員
+                                            <br>我們準備了50元折價券供您消費使用
+                                            <br>在結帳的頁面即可提供使用
+                                            <br><br><br>黑膠漢堡
+                                        </p>
+                                    </div>
+                                </div>
+                            
                             </div>
                             <div class="info">
                                 <div class="mail_pic"></div>
                                 <p id="send_time">20190503</p>
                                 <p id="send_name">黑膠漢堡</p>
                                 <p id="send_topic">已完成訂單</p>
+                                
+                                <div class="mail mask_top">
+                                        
+                                        <p style="top:12%;left:16%;">主旨</p>
+                                        <p id="mail_topic" style="top:12%;left:27%">恭喜加入會員!請打開信件領取優惠券</p>
+                                        <p style="top:21%;left:13%;">收件時間</p>
+                                        <p id="receive_time" style="top:20%;left:27%;">20190503</p>
+                                        <div class="mail_box">
+                                            <p id="mailtext" style="text-align: left;top:0%;">此信件為系統自動發出之信件，請勿直接回覆(也沒辦法讓你回復)，謝謝您的配合!
+                                                <br><br><br>感謝您成功加入會員
+                                                <br>我們準備了50元折價券供您消費使用
+                                                <br>在結帳的頁面即可提供使用
+                                                <br><br><br>黑膠漢堡
+                                            </p>
+                                        </div>
+                                    </div>
+
                             </div>
-                            <div class="info">
-                                <div class="mail_pic"></div>
-                                <p id="send_time">20190503</p>
-                                <p id="send_name">黑膠漢堡</p>
-                                <p id="send_topic">已完成訂單</p>
-                            </div>
-                            <div class="info">
-                                <div class="mail_pic"></div>
-                                <p id="send_time">20190503</p>
-                                <p id="send_name">黑膠漢堡</p>
-                                <p id="send_topic">已完成訂單</p>
-                            </div>
+                            
                            
                         </div>
                     </div>
@@ -166,6 +369,7 @@
                             <p class="bonus_text" style="top:60%;left:18%">再1160可以升級黃金會員</p><!--這部分感覺比較難寫就是-->
                             <button type="button" class="btn btn-secondary btn-lg check_btn"
                                 id='accumulate_btn'>查看會員制度優惠</button>
+
                         </div>
                     </div>
                     <div class="comment_block person_block">
