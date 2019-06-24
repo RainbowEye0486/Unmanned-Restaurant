@@ -60,6 +60,27 @@ delete_func = function () {
     $(this).parent().delay(500).hide(100);
 }
 
+detail_func = function(){
+    $(this).parent('.shop').children('.detail_block').show()
+    $('.mask').show()
+}
+
+cancel_func = function(){
+   
+    $('.mask').hide();
+    $('.mask_top').hide();
+    $('.mail').hide();
+}
+
+star_func = function(){
+    
+    $(this).css('background-image',`url(../img/star.png)`)
+    $(this).parents('.shop').children('.raking_pic').css('background-image','url(../img/smile.png)')
+}
+
+send_out_func = function(){
+    alert("送出資料")
+}
 
 Date.prototype.addDays = function (days) {
     this.setDate(this.getDate() + days);
@@ -947,12 +968,7 @@ $('.mask').on('click',function(){
 })
 
 
-$('.cancel_btn').on('click',function(){
-   
-    $('.mask').hide();
-    $('.mask_top').hide();
-    $('.mail').hide();
-})
+$('.cancel_btn').on('click',cancel_func)
 
 
 $('#accumulate_btn').on('click',function(){
@@ -965,24 +981,185 @@ $('#bonus_btn').on('click',function(){
     $('.red_gold').show();
 })
 
-$('.info').on('click',function(){
+$('.click_mail').on('click',function(){
     $('.mask').show()
     $(this).css('background-color','#e6e6e6');
-    $(this).children('.mail_pic').css('background-image',`url(../img/mail_open.png)`);
-    $(this).children('.mail_pic').css('padding-bottom','7%')
-    $(this).children('.mail_pic').css('top','13%')
-    $(this).children('.mail_pic').css('left','2.8%')
-    $(this).children('.mail').show()
+    $(this).parent().children('.mail_pic').css('background-image',`url(../img/mail_open.png)`);
+    $(this).parent().children('.mail_pic').css('padding-bottom','7%')
+    $(this).parent().children('.mail_pic').css('top','13%')
+    $(this).parent().children('.mail_pic').css('left','2.8%')
+    $(this).parent().children('.mail').show()
     
 })
 
-$('.detail_pic').on('click',function(){
-    $(this).parent('.shop').children('.detail_block').show()
-    $('.mask').show()
+$('.detail_pic').on('click',detail_func)
+
+$('.star').on('click',star_func)
+
+$('#send_out').on('click',send_out_func)
+
+$('.cancel_mail').on('click',function(){
+    $(this).parent().remove();
 })
 
-$('.star').on('click',function(){
-    $(this).css('background-image',`url(../img/star.png)`)
-    $(this).parents('.shop').children('.raking_pic').css('background-image','url(../img/smile.png)')
+$('#gogo_order').on('click',function(){
+    a=document.createElement('div')
+    $(a).addClass('shop')
+    .html(` <p id="order_time">20190503<br>11:21</p>
+    <p id="pay_way">信用卡</p>
+    <p id="left_time" >剩餘10分鐘</p>
+    <p id="take_time">11:50</p>
+    <p id="pay_money">240</p>
+    <div class="detail_pic"></div>
+    <div class="raking_pic"></div>
+    
+    <div class="detail_block mask_top">
+        <div class="dodo_pic"></div>
+        <div class="cancel_btn"></div>
+        <div class="detail_white_block">
+            <p style="left:11%;top:13%;font-size: 1vw;">餐點品項</p>
+            <p style="left:58%;top:13%;font-size: 1vw;">數量</p>
+            <p style="left:80%;top:13%;font-size: 1vw;">單價</p>
+        </div>
+        <div class="detail_order_block">
+            <div class="detail_order">
+                <div class="cover">
+                        <p class="detail_name" style="left: 2%;">黑膠鮮檸鮭魚堡</p>
+                        <p class="detail_contain" style="left: 2%;font-size: 1vw;top:45%;">花生醬</p>
+                        <p class="detail_number" style="left: 57%;">2</p>
+                        <p class="detail_perprice" style="left: 76%;">230</p>
+                </div>
+               
+            </div>
+            <div class="detail_order">
+                <div class="cover">
+                        <p class="detail_name" style="left: 2%;">黑膠起士牛肉堡</p>
+                        <p class="detail_contain" style="left: 2%;font-size: 1vw;top:45%;">不要醬</p>
+                        <p class="detail_number" style="left: 57%;">1</p>
+                        <p class="detail_perprice" style="left: 76%;">120</p>
+                </div>
+                
+            </div>
+            <div class="detail_order">
+                <div class="cover">
+                        <p class="detail_name" style="left: 2%;">黑膠鮮檸鮭魚堡</p>
+                        <p class="detail_contain" style="left: 2%;font-size: 1vw;top:45%;">花生醬</p>
+                        <p class="detail_number" style="left: 57%;">2</p>
+                        <p class="detail_perprice" style="left: 76%;">230</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="total">
+            <p>TATAL COST</p>
+            <p id="detail_cost" style="left:80%;">340</p>
+        </div>
+        <p style="top:66%;left:3%;">使用折價券</p>
+        <p id="detail_coupon" style="top:66%;left:41.5%;">-0</p>
+            <div class="detail_right">
+                <p id="de_name" style="top:1%;left:37%;">黑膠漢堡台南車站店</p>
+                <p id="de_adress" style="top: 13%;left: 37%;font-size: 1.2vw;">台南市東區大學路26號</p>
+                <p id="de_phone" style="top:21%;left: 37%;font-size: 1.2vw;">電話:(06)237 3472</p>
+                <p id="de_time" style="top:31%;left: 37%;">JUNE19(WED)   12:20</p>
+                <p id="de_payway" style="top:47%;left: 37%;">信用卡付款</p>
+                
+                <p style="top:86%;left:44%;font-size: 1.2vw;">如果喜歡該品項請點擊星星</p>
+
+                <button type="button" class="btn btn-secondary btn-lg " id='send_out'>送出</button>
+                <div class="detail_place" ></div>
+                <div class="detail_time"></div>
+                <div class="detail_way"></div>
+                <div class="detail_comment"></div>
+ 
+                <div class="comment_list">
+                        <div class="comment_list_per">
+                            <div class="cover2">
+                                <p class="de_comment">黑膠鮮檸鮭魚堡</p><!--注意這裡是使用class-->
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="comment_list_per">
+                            <div class="cover2">
+                                <p class="de_comment">黑膠鮮檸鮭魚堡</p><!--注意這裡是使用class-->
+                                <div class="star">
+                            </div> 
+                            </div>
+                        </div> 
+                </div>                
+            </div>
+    </div>
+</div>`)
+.appendTo($('.shop_inner'))
+
+$(a).children('.detail_pic').on('click',detail_func)
+$(a).find('.star').on('click',star_func)
+$(a).find('.cancel_btn').on('click',cancel_func)
+$(a).find('#send_out').on('click',send_out_func)
+
+})
+
+$('#send_out').on('click',function(){
+    w=document.createElement('div')
+    $(w).addClass('detail_order')
+    .html(` <div class="cover">
+    <p class="detail_name" style="left: 2%;">--</p>
+    <p class="detail_contain" style="left: 2%;font-size: 1vw;top:45%;">花生醬</p>
+    <p class="detail_number" style="left: 57%;">2</p>
+    <p class="detail_perprice" style="left: 76%;">230</p>
+</div>
+`)
+.appendTo($(this).parents('.shop').find('.detail_order_block'))
+
+    f=document.createElement('div')
+    $(f).addClass('comment_list_per')
+    .html(`
+    <div class="cover2">
+        <p class="de_comment">--</p>
+        <div class="star"></div> 
+    </div>`
+).appendTo($(this).parents('.shop').find('.comment_list'))
+
+
+$(f).find('.star').on('click',star_func)
+
+
+})
+
+
+$('#gogo_order').on('click',function(){
+    s=document.createElement('div')
+    $(s).addClass('info')
+    .html(`
+    <div class="click_mail"></div>
+    <div class="cancel_mail"></div>
+    <div class="mail_pic"></div>
+    <p id="send_time">20190503</p>
+    <p id="send_name">黑膠漢堡</p>
+    <p id="send_topic">已完成訂單</p>
+    
+    <div class="mail mask_top">
+       
+        <p style="top:12%;left:16%;">主旨</p>
+        <p id="mail_topic" style="top:12%;left:27%">恭喜加入會員!請打開信件領取優惠券</p>
+        <p style="top:21%;left:13%;">收件時間</p>
+        <p id="receive_time" style="top:20%;left:27%;">20190503</p>
+        <div class="mail_box">
+            <p id="mailtext" style="text-align: left;top:0%;">此信件為系統自動發出之信件，請勿直接回覆(也沒辦法讓你回復)，謝謝您的配合!
+                <br><br><br>感謝您成功加入會員
+                <br>我們準備了50元折價券供您消費使用
+                <br>在結帳的頁面即可提供使用
+                <br><br><br>黑膠漢堡
+            </p>
+        </div>
+    </div>
+`)
+.appendTo($('.info_inner'))
+
+$(s).find('.cancel_mail').on('click',function(){
+    $(this).parent().remove();
+})
+
+
+
 })
 /*以上是會員登入介面的程式碼*/
