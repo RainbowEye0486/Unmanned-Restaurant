@@ -82,6 +82,17 @@ send_out_func = function(){
     alert("送出資料")
 }
 
+detail_mail_func = function(){
+    $('.mask').show()
+    $(this).css('background-color','#e6e6e6');
+    $(this).parent().children('.mail_pic').css('background-image',`url(../img/mail_open.png)`);
+    $(this).parent().children('.mail_pic').css('padding-bottom','7%')
+    $(this).parent().children('.mail_pic').css('top','13%')
+    $(this).parent().children('.mail_pic').css('left','2.8%')
+    $(this).parent().children('.mail').show()
+    
+}
+
 Date.prototype.addDays = function (days) {
     this.setDate(this.getDate() + days);
     return this;
@@ -981,16 +992,7 @@ $('#bonus_btn').on('click',function(){
     $('.red_gold').show();
 })
 
-$('.click_mail').on('click',function(){
-    $('.mask').show()
-    $(this).css('background-color','#e6e6e6');
-    $(this).parent().children('.mail_pic').css('background-image',`url(../img/mail_open.png)`);
-    $(this).parent().children('.mail_pic').css('padding-bottom','7%')
-    $(this).parent().children('.mail_pic').css('top','13%')
-    $(this).parent().children('.mail_pic').css('left','2.8%')
-    $(this).parent().children('.mail').show()
-    
-})
+$('.click_mail').on('click',detail_mail_func)
 
 $('.detail_pic').on('click',detail_func)
 
@@ -1158,7 +1160,7 @@ $('#gogo_order').on('click',function(){
 $(s).find('.cancel_mail').on('click',function(){
     $(this).parent().remove();
 })
-
+$(s).find('.click_mail').on('click',detail_mail_func)
 
 
 })
