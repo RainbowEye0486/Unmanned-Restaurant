@@ -74,8 +74,19 @@ cancel_func = function(){
 
 star_func = function(){
     
-    $(this).css('background-image',`url(../img/star.png)`)
-    $(this).parents('.shop').children('.raking_pic').css('background-image','url(../img/smile.png)')
+    if($(this).hasClass('no_star')){
+        /*$(this).css('background-image',`url(../img/star.png)`)*/
+        $(this).parents('.shop').children('.raking_pic').css('background-image','url(../img/smile.png)')
+        $(this).removeClass('no_star')
+        $(this).addClass('has_star')
+        console.log('has_star')
+    }
+    else{
+        /*$(this).css('background-image',`url(../img/M工作區域\ 25.png)`)*/
+        $(this).addClass('no_star')
+        $(this).removeClass('has_star')
+        console.log('no_star')
+    }
 }
 
 send_out_func = function(){
@@ -1127,7 +1138,6 @@ $(f).find('.star').on('click',star_func)
 
 })
 
-
 $('#gogo_order').on('click',function(){
     s=document.createElement('div')
     $(s).addClass('info')
@@ -1164,4 +1174,6 @@ $(s).find('.click_mail').on('click',detail_mail_func)
 
 
 })
+
+
 /*以上是會員登入介面的程式碼*/

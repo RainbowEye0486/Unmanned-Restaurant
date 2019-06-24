@@ -942,11 +942,17 @@ width:100%;
 height: 50%;
 }
 
+.no_star{
+  background-image: url(../img/M工作區域\ 25.png);
+}
+.has_star{
+  background-image: url(../img/star.png);
+}
+
 .star{
   position: absolute;
   left:80%;
   top:0%;
-  background-image: url(../img/M工作區域\ 25.png);
   background-repeat: no-repeat;
   background-size: cover;
   width:10%;
